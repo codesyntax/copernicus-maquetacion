@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/ccl-icon-land-shortcut.svg">
+    <title>Copernicus Land Monitoring Service</title>
+    <meta name="Description" content="We provide geographical information on land cover and its changes, land use, vegetation state, water cycle and earth surface energy variables for Europe and entire globe.">
+    <meta name="theme-color" content="#a0b128"/>
+    <!-- Copernicus Componen Library -->
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/slick.min.js"></script>
+    <script src="./lib/ccl-functions.js"></script>
+    <link rel="stylesheet" type="text/css" href="./lib/ccl.css" media="all">
+    <link rel="stylesheet" href="./lib/bootstrap-grid.min.css" />
+    <!-- ArcGIS -->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/css/main.css">
+    <script src="https://js.arcgis.com/4.18/"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./lib/font-awesome/css/all.min.css" crossorigin="anonymous">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <!-- Scripts -->
+    <script src="./js/common-scripts.js"></script>
+    <script src="./js/map-viewer.js"></script>
+  </head>
+  <body class="ccl-style ccl-color_land loading-page">
+    <header class="ccl-header">
+      <div class="ccl-header-tools">
+        <div class="ccl-container">
+          <div class="ccl-main-menu-collapse-button"><span class="ccl-icon-menu"></span></div>
+          <div class="ccl-search-collapse-button"><span class="ccl-icon-zoom"></span></div>
+          <div class="ccl-header-tools-container">
+            <ul class="ccl-header-menu-tools">
+              <li class="header-dropdown"><a href="#">News <span class="ccl-icon-chevron-thin-down"></span></a>
+                <ul>
+                  <li><a href="#">Newsletter</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Work opportunities</a></li>
+              <li class="header-dropdown"><a href="#">Technical support <span class="ccl-icon-chevron-thin-down"></span></a>
+                <ul>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Write to service desk</a></li>
+                  <li><a href="#">How-to guides</a></li>
+                </ul>
+              </li>
+              <li  class="header-vertical-line"><div>|</div></li>
+              <li><a class="header-login-link">Login/Register</a></li>
+            </ul>
+            <form class="ccl-header-search"><input type="text" placeholder="search"><button type="submit"><span class="ccl-icon-zoom"></span></button></form>
+            <div class="ccl-header-lang-switcher" id="block-languageswitcher">
+              <div class="ccl-language-list-container">
+                <ul class="ccl-language-list">
+                  <li hreflang="en" class="en is-active"><a href="#" class="ccl-language-link is-active" hreflang="en">English (EN)</a></li>
+                  <li hreflang="fr" class="fr"><a href="#" class="ccl-language-link" hreflang="fr">Français (FR)</a></li>
+                  <li hreflang="de" class="de"><a href="#" class="ccl-language-link" hreflang="de">Deutsch (DE)</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ccl-header-nav ">
+        <div class="ccl-container">
+          <div class="ccl-header-logos-container">
+            <div class="ccl-header-logo-container">
+              <a href="http://www.copernicus.eu/">
+                <img class="ccl-header-logo" src="./img/EU-Cop-logo.svg"/>
+              </a>
+              <a href="./">
+                <img class="ccl-header-logo ccl-service-button" src="./img/ccl-icon-land-text.svg"/>
+              </a>
+            </div>
+          </div>
+          <nav class="ccl-main-menu">
+            <ul class="ccl-header-main-menu">
+              <li><a href="./product-portfolio/product-creation.html">Product portfolio</a></li>
+              <li><a href="./dataset-catalogue.html">Dataset catalogue</a></li>
+              <li class="active"><a href="./map-viewer.html">Map viewer</a></li>
+              <li><a href="./clms-made-easy.html">CLMS made easy</a></li>
+              <li><a href="./use-cases.html">Use cases</a></li>
+              <li><a href="./about-us/what-we-do.html">About us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <hr>
+    <main class="map-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="ccl-breadcrumb" aria-label="breadcrumb">
+              <span class="ccl-u-sr-only">You are here:</span>
+              <ol class="ccl-breadcrumb__segments-wrapper">
+                <li class="ccl-breadcrumb__segment ccl-breadcrumb__segment--first">
+                  <a class="ccl-link ccl-link--inverted ccl-link--standalone ccl-breadcrumb__link" href="./">Home</a>
+                </li>
+                <li class="ccl-breadcrumb__segment ccl-breadcrumb__segment--last">
+                  <span>Map viewer</span>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="map-container" id="map_viewer"></div>
+    </main>
+    <footer class="ccl-footer">
+      <div class="ccl-footer-main">
+        <div class="ccl-footer-logo"><a href="http://www.copernicus.eu/" target="_blank"><img src="./img/copernicus_eu_logo_white.svg" class="ccl-footer-logo-img"/></a></div>
+        <div class="ccl-container ccl-container-flex">
+          <div class="ccl-footer-col ">
+            <div class="ccl-footer-col-title">Copernicus Services</div>
+            <div class="ccl-footer-services">
+              <a href="https://atmosphere.copernicus.eu/" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-atmosphere">
+              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-atmosphere.svg"/>	Atmosphere
+              </a>
+              <a href="https://marine.copernicus.eu/" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-marine">
+              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-marine.svg"/>Marine
+              </a>
+              <a href="https://land.copernicus.eu/" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-land">
+              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-land.svg"/>Land
+              </a>
+              <a href="https://www.copernicus.eu/en/services/security" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-security">
+              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-security.svg"/>Security
+              </a>
+              <a href="https://climate.copernicus.eu/" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-climate">
+              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-climate.svg"/>Climate Change	
+              </a>
+              <a href="https://emergency.copernicus.eu/" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-emergency">
+              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-emergency.svg"/>Emergency	
+              </a>
+            </div>
+          </div>
+          <div class="ccl-footer-col">
+            <div class="ccl-footer-form-title">Newsletter</div>
+            <form class="ccl-footer-form"><input type="text" placeholder="Enter an email adress"><button type="submit">Subscribe</button></form>
+            <div class="ccl-footer-col-title">Follow us</div>
+            <div class="ccl-footer-social">
+              <a href="https://www.youtube.com/channel/UCpuwnbuwGG20enAdE50g6TA"><span class="ccl-icon-youtube"></span></a>
+              <a href="https://twitter.com/CopernicusLand"><span class="ccl-icon-twitter"></span></a>
+              <a href="https://www.facebook.com/CopernicusEU"><span class="ccl-icon-facebook"></span></a>
+          </div>
+          </div>
+          <div class="ccl-footer-col">
+            <div class="ccl-footer-col-title">Implemented by</div>
+            <div class="footer-implemented footer-implemented-eea">
+              <a href="https://www.eea.europa.eu/" target="_blank">
+                <img class="ccl-svg ccl-service-button-icon" src="./img/eea-logo.svg"/>
+              </a>
+            </div>
+            <div class="footer-implemented footer-implemented-ec">
+              <a href="https://ec.europa.eu/" target="_blank">
+                <img class="ccl-svg ccl-service-button-icon" src="./img/ec-logo-white.svg"/>
+              </a>
+              <span>DG Joint Research Center</span>
+            </div>
+            <div class="ccl-footer-col-title">Expert support provided by</div>
+            <p>EIONET Action Group on Land monitoring in Europe (EAGLE)</p>
+          </div>
+        </div>
+      </div>
+      <div class="ccl-footer-bottom">
+        <ul class="ccl-footer-legal">
+          <li>
+            <a class="ccl-link" href="#">Disclaimer</a>
+          </li>
+          <li>
+            <a class="ccl-link" href="#">Data policy</a>
+          </li>
+          <li>
+            <a class="ccl-link" href="#">Personal data protection</a>
+          </li>
+          <li>
+            <a class="ccl-link" href="#">Cookies</a>
+          </li>
+          <li>
+            <a class="ccl-link" href="#">Sitemap</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="modal" id="login_modal">
+      <div class="modal-background">
+        <div class="modal-container">
+          <div class="modal-close">
+            <span class="ccl-icon-close"></span>
+          </div>
+          <div class="modal-title">Login</div>
+          <div class="modal-content">
+            <div class="modal-login-field">
+              <i class="fas fa-user"></i>
+              <input type="text" class="ccl-text-input" placeholder="User name">
+            </div>
+            <div class="modal-login-field">
+              <i class="fas fa-unlock-alt"></i>
+              <input type="text" class="ccl-text-input" placeholder="Password">
+            </div>
+            <a href="">Forgot your password?</a>
+          </div>
+          <button class="ccl-button ccl-button-green">Login</button>
+          <hr>
+          <div class="modal-title">New user</div>
+          <div class="modal-text">
+            Registration is free. Personal data will only be used internally. For more details, see the <a href="">Privacy policy and terms of use</a>.
+          </div>
+          <button class="ccl-button ccl-button-white">Register</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
