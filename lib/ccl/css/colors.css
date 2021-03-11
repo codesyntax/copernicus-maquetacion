@@ -1,0 +1,200 @@
+/*THEME land*/
+.ccl-color_land {
+  /*backgrounds*/
+  /*elements*/ }
+  .ccl-color_land .ccl-bg-grey {
+    background-color: #A0B1280f; }
+  .ccl-color_land .ccl-main_bgcolor {
+    background-color: #A0B128; }
+  .ccl-color_land .ccl-title_bgcolor {
+    background-color: #273B4B; }
+  .ccl-color_land .ccl-text_bgcolor {
+    background-color: #212529; }
+  .ccl-color_land .ccl-text_light_bgcolor {
+    background-color: #ADB0B8; }
+  .ccl-color_land .ccl-link_hover_bgcolor {
+    background-color: #7C8921; }
+  .ccl-color_land .ccl-link_bgcolor {
+    background-color: #ACBE39; }
+  .ccl-color_land .ccl-main_color {
+    color: #A0B128; }
+  .ccl-color_land .ccl-title_color,
+  .ccl-color_land h1,
+  .ccl-color_land h2,
+  .ccl-color_land h3,
+  .ccl-color_land h4,
+  .ccl-color_land h5,
+  .ccl-color_land h6,
+  .ccl-color_land .ccl-title_headline,
+  .ccl-color_land .ccl-title,
+  .ccl-color_land .ccl-body_title {
+    color: #273B4B; }
+  .ccl-color_land .ccl-text_color,
+  .ccl-color_land p,
+  .ccl-color_land .ccl-body_big,
+  .ccl-color_land .ccl-body_normal,
+  .ccl-color_land .ccl-body_small {
+    color: #212529; }
+  .ccl-color_land .ccl-text_light_color {
+    color: #ADB0B8; }
+  .ccl-color_land .ccl-link_hover_color,
+  .ccl-color_land a:hover,
+  .ccl-color_land .ccl-link_hover,
+  .ccl-color_land .ccl-breadcrumbs_link_hover {
+    color: #7C8921;
+    border-color: #7C8921; }
+  .ccl-color_land .ccl-link_color,
+  .ccl-color_land .ccl_button_color,
+  .ccl-color_land a,
+  .ccl-color_land .ccl-link,
+  .ccl-color_land .ccl-breadcrumbs_link {
+    color: #ACBE39;
+    border-color: #ACBE39; }
+  .ccl-color_land .ccl-list li::before {
+    background: #A0B128; }
+  .ccl-color_land .ccl-button--default {
+    border-color: #A0B128;
+    color: #A0B128; }
+    .ccl-color_land .ccl-button--default:active, .ccl-color_land .ccl-button--default:focus, .ccl-color_land .ccl-button--default:hover {
+      background-color: #A0B128;
+      color: #fff; }
+  .ccl-color_land .ccl-button--filter-primary,
+  .ccl-color_land .ccl-button--filter-icon {
+    background-color: #A0B128;
+    color: #fff; }
+    .ccl-color_land .ccl-button--filter-primary:active, .ccl-color_land .ccl-button--filter-primary:focus, .ccl-color_land .ccl-button--filter-primary:hover,
+    .ccl-color_land .ccl-button--filter-icon:active,
+    .ccl-color_land .ccl-button--filter-icon:focus,
+    .ccl-color_land .ccl-button--filter-icon:hover {
+      border-color: #A0B128;
+      background-color: #fff;
+      color: #A0B128; }
+  .ccl-color_land .ccl-button--filter-secondary {
+    background-color: #A0B12880;
+    color: #fff; }
+    .ccl-color_land .ccl-button--filter-secondary:active, .ccl-color_land .ccl-button--filter-secondary:focus, .ccl-color_land .ccl-button--filter-secondary:hover {
+      border-color: #A0B128;
+      color: #A0B128;
+      background-color: #fff; }
+  .ccl-color_land .ccl-breadcrumb__segment--last {
+    color: #7C8921; }
+  .ccl-color_land .ccl-block-title {
+    border-color: #A0B128; }
+  .ccl-color_land .ccl-form-check-input:checked + .ccl-form-check-label::after,
+  .ccl-color_land .form-check-input:checked + label::after {
+    border-color: #A0B128 !important; }
+  .ccl-color_land .ccl-form-check-input:checked + .ccl-form-check-label:before {
+    border-color: #A0B128; }
+  .ccl-color_land .ccl-filter-title {
+    background-color: #A0B128; }
+  .ccl-color_land .ccl-modal {
+    background-color: #A0B128; }
+  .ccl-color_land .ccl-footer-main {
+    background-color: #A0B128; }
+  .ccl-color_land .ccl-footer-form button {
+    color: #A0B128 !important; }
+  .ccl-color_land .ccl-header-tools {
+    background-color: #A0B128; }
+  .ccl-color_land .ccl-header-search input {
+    color: #A0B128 !important; }
+  .ccl-color_land .ccl-header-search button {
+    background-color: #212529 !important; }
+  .ccl-color_land ul.ccl-language-list {
+    background-color: #A0B128 !important; }
+    .ccl-color_land ul.ccl-language-list li a:hover,
+    .ccl-color_land ul.ccl-language-list li a.is-active:hover {
+      color: #A0B128 !important;
+      background-color: #fff; }
+  @media (max-width: 700px) {
+    .ccl-color_land .ccl-header-slogan {
+      color: #A0B128 !important; } }
+  @media (min-width: 820px) {
+    .ccl-color_land .ccl-header-main-menu a {
+      color: #A0B128 !important; }
+      .ccl-color_land .ccl-header-main-menu a:hover {
+        border-color: #A0B128 !important; }
+    .ccl-color_land .ccl-header-main-menu li li {
+      border-color: #A0B128 !important; }
+      .ccl-color_land .ccl-header-main-menu li li a:hover {
+        background-color: #A0B128 !important;
+        color: #fff !important; }
+    .ccl-color_land .ccl-list-carousel .ccl-list-item-image img {
+      border-color: #A0B128 !important; }
+    .ccl-color_land .ccl-list-carousel .slick-arrow:before {
+      color: #A0B128 !important; } }
+  @media (max-width: 820px) {
+    .ccl-color_land .ccl-header-main-menu a,
+    .ccl-color_land .ccl-collapsible-toolmenu a {
+      color: #fff !important; }
+      .ccl-color_land .ccl-header-main-menu a:hover, .ccl-color_land .ccl-header-main-menu a.active,
+      .ccl-color_land .ccl-collapsible-toolmenu a:hover,
+      .ccl-color_land .ccl-collapsible-toolmenu a.active {
+        background-color: rgba(255, 255, 255, 0.2) !important; }
+    .ccl-color_land .ccl-header-main-menu .active a,
+    .ccl-color_land .ccl-collapsible-toolmenu .active a {
+      background-color: rgba(255, 255, 255, 0.2) !important; } }
+  .ccl-color_land .ccl-list-item-image {
+    border-color: #A0B128; }
+  .ccl-color_land .ccl-banner-top-bar {
+    background-color: #A0B128 !important; }
+  .ccl-color_land .ccl-banner-top-main-block-title {
+    background-color: #A0B12880; }
+  .ccl-color_land .ccl-main-menu-collapse-button:hover,
+  .ccl-color_land .ccl-search-collapse-button:hover {
+    color: #A0B128 !important; }
+  @media (max-width: 820px) {
+    .ccl-color_land .ccl-main-menu {
+      background-color: #A0B128 !important; } }
+  .ccl-color_land .ccl-use-case-col-list {
+    background-color: #A0B1280f; }
+
+.ccl-service-button-m.ccl-service-button-land,
+.ccl-service-button-l.ccl-service-button-land,
+.ccl-service-button-f.ccl-service-button-land {
+  background-color: #A0B128; }
+  .ccl-service-button-m.ccl-service-button-land .ccl-service-button-icon path,
+  .ccl-service-button-l.ccl-service-button-land .ccl-service-button-icon path,
+  .ccl-service-button-f.ccl-service-button-land .ccl-service-button-icon path {
+    fill: #fff; }
+  .ccl-service-button-m.ccl-service-button-land:active, .ccl-service-button-m.ccl-service-button-land:focus, .ccl-service-button-m.ccl-service-button-land:hover,
+  .ccl-service-button-l.ccl-service-button-land:active,
+  .ccl-service-button-l.ccl-service-button-land:focus,
+  .ccl-service-button-l.ccl-service-button-land:hover,
+  .ccl-service-button-f.ccl-service-button-land:active,
+  .ccl-service-button-f.ccl-service-button-land:focus,
+  .ccl-service-button-f.ccl-service-button-land:hover {
+    background-color: #fff;
+    color: #A0B128; }
+    .ccl-service-button-m.ccl-service-button-land:active .ccl-service-button-icon path, .ccl-service-button-m.ccl-service-button-land:focus .ccl-service-button-icon path, .ccl-service-button-m.ccl-service-button-land:hover .ccl-service-button-icon path,
+    .ccl-service-button-l.ccl-service-button-land:active .ccl-service-button-icon path,
+    .ccl-service-button-l.ccl-service-button-land:focus .ccl-service-button-icon path,
+    .ccl-service-button-l.ccl-service-button-land:hover .ccl-service-button-icon path,
+    .ccl-service-button-f.ccl-service-button-land:active .ccl-service-button-icon path,
+    .ccl-service-button-f.ccl-service-button-land:focus .ccl-service-button-icon path,
+    .ccl-service-button-f.ccl-service-button-land:hover .ccl-service-button-icon path {
+      fill: #A0B128; }
+
+.ccl-service-button-s.ccl-service-button-land .ccl-service-button-icon path {
+  fill: #A0B128; }
+.ccl-service-button-s.ccl-service-button-land.ccl-service-button-link:active, .ccl-service-button-s.ccl-service-button-land.ccl-service-button-link:focus, .ccl-service-button-s.ccl-service-button-land.ccl-service-button-link:hover {
+  background-color: #A0B128; }
+  .ccl-service-button-s.ccl-service-button-land.ccl-service-button-link:active .ccl-service-button-icon path, .ccl-service-button-s.ccl-service-button-land.ccl-service-button-link:focus .ccl-service-button-icon path, .ccl-service-button-s.ccl-service-button-land.ccl-service-button-link:hover .ccl-service-button-icon path {
+    fill: #fff; }
+
+.ccl-service-button-w.ccl-service-button-land .ccl-service-button-icon path {
+  fill: #fff; }
+.ccl-service-button-w.ccl-service-button-land.ccl-service-button-link:active, .ccl-service-button-w.ccl-service-button-land.ccl-service-button-link:focus, .ccl-service-button-w.ccl-service-button-land.ccl-service-button-link:hover {
+  background-color: #fff; }
+  .ccl-service-button-w.ccl-service-button-land.ccl-service-button-link:active .ccl-service-button-icon path, .ccl-service-button-w.ccl-service-button-land.ccl-service-button-link:focus .ccl-service-button-icon path, .ccl-service-button-w.ccl-service-button-land.ccl-service-button-link:hover .ccl-service-button-icon path {
+    fill: #A0B128; }
+
+.ccl-service-button-full.ccl-service-button-land .ccl-service-button-label {
+  color: #A0B128; }
+.ccl-service-button-full.ccl-service-button-land.ccl-service-button-link:active, .ccl-service-button-full.ccl-service-button-land.ccl-service-button-link:focus, .ccl-service-button-full.ccl-service-button-land.ccl-service-button-link:hover {
+  background-color: #A0B128; }
+  .ccl-service-button-full.ccl-service-button-land.ccl-service-button-link:active .ccl-service-button-icon path, .ccl-service-button-full.ccl-service-button-land.ccl-service-button-link:focus .ccl-service-button-icon path, .ccl-service-button-full.ccl-service-button-land.ccl-service-button-link:hover .ccl-service-button-icon path {
+    fill: #fff; }
+  .ccl-service-button-full.ccl-service-button-land.ccl-service-button-link:active .ccl-service-button-label, .ccl-service-button-full.ccl-service-button-land.ccl-service-button-link:focus .ccl-service-button-label, .ccl-service-button-full.ccl-service-button-land.ccl-service-button-link:hover .ccl-service-button-label {
+    color: #fff; }
+
+/*# sourceMappingURL=colors.css.map */

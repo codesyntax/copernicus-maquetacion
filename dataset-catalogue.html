@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,16 +12,16 @@
     <script src="./lib/jquery.min.js"></script>
     <script src="./lib/slick.min.js"></script>
     <script src="./lib/ccl-functions.js"></script>
-    <link rel="stylesheet" type="text/css" href="./lib/ccl.css" media="all">
-    <link rel="stylesheet" href="./lib/bootstrap-grid.min.css" />
+    <link rel="stylesheet" type="text/css" href="./lib/ccl/css/ccl.css" media="all">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="./lib/font-awesome/css/all.min.css" crossorigin="anonymous">
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <!-- Scripts -->
     <script src="./js/common-scripts.js"></script>
+    <script src="./js/pagination.js"></script>
   </head>
-  <body class="ccl-style ccl-color_land loading-page">
+  <body class="ccl-style ccl-color_land">
     <header class="ccl-header">
       <div class="ccl-header-tools">
         <div class="ccl-container">
@@ -29,23 +29,23 @@
           <div class="ccl-search-collapse-button"><span class="ccl-icon-zoom"></span></div>
           <div class="ccl-header-tools-container">
             <ul class="ccl-header-menu-tools">
-              <li class="header-dropdown"><a href="#">News <span class="ccl-icon-chevron-thin-down"></span></a>
+              <li class="header-dropdown"><a href="./news.html">News<span class="ccl-icon-chevron-thin-down"></span></a>
                 <ul>
-                  <li><a href="#">Newsletter</a></li>
+                  <li><a href="./newsletter.html">Newsletter</a></li>
                 </ul>
               </li>
-              <li><a href="#">Work opportunities</a></li>
-              <li class="header-dropdown"><a href="#">Technical support <span class="ccl-icon-chevron-thin-down"></span></a>
+              <li><a href="./work-opportunities.html">Work opportunities</a></li>
+              <li class="header-dropdown"><span>Technical support<span class="ccl-icon-chevron-thin-down"></span></span>
                 <ul>
-                  <li><a href="#">FAQs</a></li>
-                  <li><a href="#">Write to service desk</a></li>
-                  <li><a href="#">How-to guides</a></li>
+                  <li><a href="./faq/faq-general.html">FAQs</a></li>
+                  <li><a href="./service-desk.html">Write to service desk</a></li>
+                  <li><a href="./guides.html">How-to guides</a></li>
                 </ul>
               </li>
               <li  class="header-vertical-line"><div>|</div></li>
-              <li><a class="header-login-link">Login/Register</a></li>
+              <li><span class="header-login-link">Login/Register</span></li>
             </ul>
-            <form class="ccl-header-search"><input type="text" placeholder="search"><button type="submit"><span class="ccl-icon-zoom"></span></button></form>
+            <form class="ccl-header-search"><input type="text" placeholder="search" aria-label="Search"><button type="submit" aria-label="Search"><span class="ccl-icon-zoom"></span></button></form>
             <div class="ccl-header-lang-switcher" id="block-languageswitcher">
               <div class="ccl-language-list-container">
                 <ul class="ccl-language-list">
@@ -62,11 +62,11 @@
         <div class="ccl-container">
           <div class="ccl-header-logos-container">
             <div class="ccl-header-logo-container">
-              <a href="http://www.copernicus.eu/">
-                <img class="ccl-header-logo" src="./img/EU-Cop-logo.svg"/>
+              <a href="http://www.copernicus.eu/" target="_blank" rel="noreferrer">
+                <img class="ccl-header-logo" src="./img/EU-Cop-logo.svg" alt="Copernicus logo"/>
               </a>
               <a href="./">
-                <img class="ccl-header-logo ccl-service-button" src="./img/ccl-icon-land-text.svg"/>
+                <img class="ccl-header-logo ccl-service-button" src="./img/ccl-icon-land-text.svg" alt="Home"/>
               </a>
             </div>
           </div>
@@ -85,167 +85,186 @@
     </header>
     <hr>
     <main>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="ccl-breadcrumb" aria-label="breadcrumb">
-              <span class="ccl-u-sr-only">You are here:</span>
-              <ol class="ccl-breadcrumb__segments-wrapper">
-                <li class="ccl-breadcrumb__segment ccl-breadcrumb__segment--first">
-                  <a class="ccl-link ccl-link--inverted ccl-link--standalone ccl-breadcrumb__link" href="./">Home</a>
-                </li>
-                <li class="ccl-breadcrumb__segment ccl-breadcrumb__segment--last">
-                  <span>Dataset catalogue</span>
-                </li>
-              </ol>
-            </nav>
-            <h1 class="page-title">Dataset catalogue</h1>
-            <div class="page-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
-            </div>
-            <form class="ccl-form search-form">
-              <input type="text" class="ccl-text-input" id="datasets_search" name="" placeholder="Search datasets">
-              <button class="ccl-button" type="submit">
-                <span class="ccl-icon-zoom"></span>
-              </button>
-            </form>
-            <hr>
+      <div class="ccl-container">
+        <section class="page-section">
+          <nav class="ccl-breadcrumb" aria-label="breadcrumb">
+            <span class="ccl-u-sr-only">You are here:</span>
+            <ol class="ccl-breadcrumb__segments-wrapper">
+              <li class="ccl-breadcrumb__segment ccl-breadcrumb__segment--first">
+                <a class="ccl-link ccl-link--inverted ccl-link--standalone ccl-breadcrumb__link" href="./">Home</a>
+              </li>
+              <li class="ccl-breadcrumb__segment ccl-breadcrumb__segment--last">
+                <span>Dataset catalogue</span>
+              </li>
+            </ol>
+          </nav>
+          <h1 class="page-title">Dataset catalogue</h1>
+          <div class="page-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
           </div>
-          <div class="order-1 order-sm-0 col-12 col-sm-8 col-md-9">
-            <div class="left-content">
-              <div class="card-container">
-                <div class="card-line">
-                  <div class="card-image">
-                    <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" title="Placeholder image" alt="Placeholder image">
-                  </div>
-                  <div class="card-text">
-                    <div class="card-title">
-                      <a href="./dataset-catalogue/dataset-info.html">Dataset title</a>
-                    </div>
-                    <div class="card-description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
-                    </div>
-                  </div>
-                </div>
-                <div class="card-line">
-                  <div class="card-image">
-                    <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" title="Placeholder image" alt="Placeholder image">
-                  </div>
-                  <div class="card-text">
-                    <div class="card-title">
-                      <a href="./dataset-catalogue/dataset-info.html">Dataset title</a>
-                    </div>
-                    <div class="card-description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
-                    </div>
-                  </div>
-                </div>
-                <div class="card-line">
-                  <div class="card-image">
-                    <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" title="Placeholder image" alt="Placeholder image">
-                  </div>
-                  <div class="card-text">
-                    <div class="card-title">
-                      <a href="./dataset-catalogue/dataset-info.html">Dataset title</a>
-                    </div>
-                    <div class="card-description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
-                    </div>
-                  </div>
-                </div>
-                <div class="card-line">
-                  <div class="card-image">
-                    <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" title="Placeholder image" alt="Placeholder image">
-                  </div>
-                  <div class="card-text">
-                    <div class="card-title">
-                      <a href="./dataset-catalogue/dataset-info.html">Dataset title</a>
-                    </div>
-                    <div class="card-description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <form class="ccl-form search-form">
+            <input type="text" class="ccl-text-input" id="datasets_search" name="" placeholder="Search datasets" aria-label="Search datasets">
+            <button class="ccl-button" type="submit" aria-label="Search">
+              <span class="ccl-icon-zoom"></span>
+            </button>
+          </form>
+          <div class="search-results">
+            <span>Displaying</span> <span class="search-results-current">1 - 10</span> of <span class="search-results-total"></span>300</span>
           </div>
-          <div class="order-0 order-sm-1 col-12 col-sm-4 col-md-3">
-            <nav class="dropdown dropdown-filters">
-              <div class="ccl-dropdown__link  ccl-expandable__button" aria-expanded="false">Sort by</div>
+          <hr>
+        </section>
+      </div>
+      <div class="ccl-container ccl-container-flex">
+        <div class="right-content cont-w-25 cont-o-1">
+          <nav class="dropdown dropdown-filters">
+            <fieldset class="ccl-fieldset">
+              <div class="ccl-dropdown__filter ccl-expandable__button" aria-expanded="false"><legend class="ccl-form-legend">Sort by</legend></div>
               <div class="ccl-form">
                 <div class="ccl-form-group">
                   <input type="checkbox" id="sort_by_name" name="field_gdpr[value]" value="name" class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
-                  <label class="ccl-form-check-label" for="sort_by_name">
-                    <span>Name</span>
-                  </label>
+                  <label class="ccl-form-check-label" for="sort_by_name">Name</label>
                 </div>
                 <div class="ccl-form-group">
                   <input type="checkbox" id="sort_by_date" name="field_gdpr[value]" value="date" class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
-                  <label class="ccl-form-check-label" for="sort_by_date">
-                    <span>Date</span>
-                  </label>
+                  <label class="ccl-form-check-label" for="sort_by_date">Date</label>
                 </div>
               </div>
-              <div  class="ccl-dropdown__link  ccl-expandable__button" aria-expanded="false">Type of resources</div>
+            </fieldset>
+            <fieldset class="ccl-fieldset">
+              <div class="ccl-dropdown__filter ccl-expandable__button" aria-expanded="false"><legend class="ccl-form-legend">Type of resources</legend></div>
               <div class="ccl-form">
-                <p>Lorem ipsum dolor ....</p>
+                <div class="ccl-form-group">
+                  <input type="checkbox" id="resources_" name="field_gdpr[value]" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                  <label class="ccl-form-check-label" for="resources_">...</label>
+                </div>
               </div>
-              <div  class="ccl-dropdown__link  ccl-expandable__button" aria-expanded="false">GEMET keyword</div>
+            </fieldset>
+            <fieldset class="ccl-fieldset">
+              <div class="ccl-dropdown__filter ccl-expandable__button" aria-expanded="false"><legend class="ccl-form-legend">GEMET keyword</legend></div>
               <div class="ccl-form">
-                <p>Lorem ipsum dolor ....</p>
+                <div class="ccl-form-group">
+                  <input type="checkbox" id="gemet_" name="field_gdpr[value]" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                  <label class="ccl-form-check-label" for="gemet_">...</label>
+                </div>
               </div>
-            </nav>
+            </fieldset>
+          </nav>
+        </div>
+        <div class="left-content cont-w-75">
+          <div class="card-container">
+            <div class="card-line">
+              <div class="card-image">
+                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image">
+              </div>
+              <div class="card-text">
+                <div class="card-title">
+                  <a href="./dataset-catalogue/dataset-info.html">Dataset title</a>
+                </div>
+                <div class="card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
+                </div>
+              </div>
+            </div>
+            <div class="card-line">
+              <div class="card-image">
+                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image">
+              </div>
+              <div class="card-text">
+                <div class="card-title">
+                  <a href="./dataset-catalogue/dataset-info.html">Dataset title</a>
+                </div>
+                <div class="card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
+                </div>
+              </div>
+            </div>
+            <div class="card-line">
+              <div class="card-image">
+                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image">
+              </div>
+              <div class="card-text">
+                <div class="card-title">
+                  <a href="./dataset-catalogue/dataset-info.html">Dataset title</a>
+                </div>
+                <div class="card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
+                </div>
+              </div>
+            </div>
+            <div class="card-line">
+              <div class="card-image">
+                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image">
+              </div>
+              <div class="card-text">
+                <div class="card-title">
+                  <a href="./dataset-catalogue/dataset-info.html">Dataset title</a>
+                </div>
+                <div class="card-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <footer class="ccl-footer">
       <div class="ccl-footer-main">
-        <div class="ccl-footer-logo"><a href="http://www.copernicus.eu/" target="_blank"><img src="./img/copernicus_eu_logo_white.svg" class="ccl-footer-logo-img"/></a></div>
+        <div class="ccl-footer-logo"><a href="http://www.copernicus.eu/" target="_blank" rel="noreferrer"><img src="./img/copernicus_eu_logo_white.svg" class="ccl-footer-logo-img" alt="Copernicus"/></a></div>
         <div class="ccl-container ccl-container-flex">
           <div class="ccl-footer-col ">
             <div class="ccl-footer-col-title">Copernicus Services</div>
             <div class="ccl-footer-services">
-              <a href="https://atmosphere.copernicus.eu/" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-atmosphere">
-              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-atmosphere.svg"/>	Atmosphere
+              <a href="https://atmosphere.copernicus.eu/" target="_blank" rel="noreferrer" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-atmosphere">
+              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-atmosphere.svg" alt=""/>Atmosphere
               </a>
-              <a href="https://marine.copernicus.eu/" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-marine">
-              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-marine.svg"/>Marine
+              <a href="https://marine.copernicus.eu/" target="_blank" rel="noreferrer" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-marine">
+              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-marine.svg" alt=""/>Marine
               </a>
-              <a href="https://land.copernicus.eu/" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-land">
-              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-land.svg"/>Land
+              <a href="https://land.copernicus.eu/" target="_blank" rel="noreferrer" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-land">
+              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-land.svg" alt=""/>Land
               </a>
-              <a href="https://www.copernicus.eu/en/services/security" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-security">
-              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-security.svg"/>Security
+              <a href="https://www.copernicus.eu/en/services/security" target="_blank" rel="noreferrer" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-security">
+              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-security.svg" alt=""/>Security
               </a>
-              <a href="https://climate.copernicus.eu/" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-climate">
-              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-climate.svg"/>Climate Change	
+              <a href="https://climate.copernicus.eu/" target="_blank" rel="noreferrer" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-climate">
+              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-climate.svg" alt=""/>Climate Change
               </a>
-              <a href="https://emergency.copernicus.eu/" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-emergency">
-              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-emergency.svg"/>Emergency	
+              <a href="https://emergency.copernicus.eu/" target="_blank" rel="noreferrer" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-emergency">
+              <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-emergency.svg" alt=""/>Emergency
               </a>
             </div>
           </div>
           <div class="ccl-footer-col">
             <div class="ccl-footer-form-title">Newsletter</div>
-            <form class="ccl-footer-form"><input type="text" placeholder="Enter an email adress"><button type="submit">Subscribe</button></form>
+            <form class="ccl-footer-form">
+              <input type="text" class="footer-privacy-input" placeholder="Enter an email adress" aria-label="Enter an email adress"><button class="footer-privacy-button" type="submit">Subscribe</button>
+            </form>
+            <div class="ccl-form footer-privacy-check">
+              <div class="ccl-form-group">
+                <input type="checkbox" id="footer_privacy" name="footerPrivacy" value="" class="ccl-checkbox  ccl-form-check-input" aria-required="true">
+                <label class="ccl-form-check-label" for="footer_privacy">
+                  I agree to the <a href="./personal-data-protection.html" target="_blank">privacy policy.</a>
+                </label>
+              </div>
+            </div>
             <div class="ccl-footer-col-title">Follow us</div>
             <div class="ccl-footer-social">
-              <a href="https://www.youtube.com/channel/UCpuwnbuwGG20enAdE50g6TA"><span class="ccl-icon-youtube"></span></a>
-              <a href="https://twitter.com/CopernicusLand"><span class="ccl-icon-twitter"></span></a>
-              <a href="https://www.facebook.com/CopernicusEU"><span class="ccl-icon-facebook"></span></a>
+              <a href="https://www.youtube.com/channel/UCpuwnbuwGG20enAdE50g6TA" target="_blank" rel="noreferrer" aria-label="Youtube"><span class="ccl-icon-youtube"></span></a>
+              <a href="https://twitter.com/CopernicusLand" target="_blank" rel="noreferrer" aria-label="Twitter"><span class="ccl-icon-twitter"></span></a>
+              <a href="https://www.facebook.com/CopernicusEU" target="_blank" rel="noreferrer" aria-label="Facebook"><span class="ccl-icon-facebook"></span></a>
           </div>
           </div>
           <div class="ccl-footer-col">
             <div class="ccl-footer-col-title">Implemented by</div>
             <div class="footer-implemented footer-implemented-eea">
-              <a href="https://www.eea.europa.eu/" target="_blank">
-                <img class="ccl-svg ccl-service-button-icon" src="./img/eea-logo.svg"/>
+              <a href="https://www.eea.europa.eu/" target="_blank" rel="noreferrer">
+                <img class="ccl-svg ccl-service-button-icon" src="./img/eea-logo.svg" alt="EEA"/>
               </a>
             </div>
             <div class="footer-implemented footer-implemented-ec">
-              <a href="https://ec.europa.eu/" target="_blank">
-                <img class="ccl-svg ccl-service-button-icon" src="./img/ec-logo-white.svg"/>
+              <a href="https://ec.europa.eu/" target="_blank" rel="noreferrer">
+                <img class="ccl-svg ccl-service-button-icon" src="./img/ec-logo-white.svg" alt="DG Joint Research Center"/>
               </a>
               <span>DG Joint Research Center</span>
             </div>
@@ -257,19 +276,19 @@
       <div class="ccl-footer-bottom">
         <ul class="ccl-footer-legal">
           <li>
-            <a class="ccl-link" href="#">Disclaimer</a>
+            <a class="ccl-link" href="./disclaimer.html">Disclaimer</a>
           </li>
           <li>
-            <a class="ccl-link" href="#">Data policy</a>
+            <a class="ccl-link" href="./data-policy.html">Data policy</a>
           </li>
           <li>
-            <a class="ccl-link" href="#">Personal data protection</a>
+            <a class="ccl-link" href="./personal-data-protection.html">Personal data protection</a>
           </li>
           <li>
-            <a class="ccl-link" href="#">Cookies</a>
+            <a class="ccl-link" href="./cookies.html">Cookies</a>
           </li>
           <li>
-            <a class="ccl-link" href="#">Sitemap</a>
+            <a class="ccl-link" href="./sitemap.html">Sitemap</a>
           </li>
         </ul>
       </div>
@@ -278,27 +297,27 @@
       <div class="modal-background">
         <div class="modal-container">
           <div class="modal-close">
-            <span class="ccl-icon-close"></span>
+            <span class="ccl-icon-close" aria-label="Close"></span>
           </div>
           <div class="modal-title">Login</div>
           <div class="modal-content">
             <div class="modal-login-field">
               <i class="fas fa-user"></i>
-              <input type="text" class="ccl-text-input" placeholder="User name">
+              <input type="text" class="ccl-text-input" placeholder="User name" aria-label="User name">
             </div>
             <div class="modal-login-field">
               <i class="fas fa-unlock-alt"></i>
-              <input type="text" class="ccl-text-input" placeholder="Password">
+              <input type="password" class="ccl-text-input" placeholder="Password" aria-label="Password">
             </div>
-            <a href="">Forgot your password?</a>
+            <a href="./reset-password.html">Forgot your password?</a>
           </div>
-          <button class="ccl-button ccl-button-green">Login</button>
+          <button class="ccl-button ccl-button-green modal-login-button">Login</button>
           <hr>
           <div class="modal-title">New user</div>
           <div class="modal-text">
-            Registration is free. Personal data will only be used internally. For more details, see the <a href="">Privacy policy and terms of use</a>.
+            Registration is free. Personal data will only be used internally. For more details, see the <a href="./personal-data-protection.html" target="_blank">Personal data protection</a>.
           </div>
-          <button class="ccl-button ccl-button-white">Register</button>
+          <a href="./register.html" class="ccl-button ccl-button--default">Register</a>
         </div>
       </div>
     </div>

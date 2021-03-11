@@ -1,11 +1,7 @@
 $(document).ready(function(){
 
-
-  
-
-
-
 });
+
 var view;
 require([
   "esri/Map",
@@ -43,6 +39,8 @@ require([
   var basemap_button = document.createElement('div');
   basemap_button.className = "esri-icon-basemap esri-widget--button esri-widget esri-interactive";
   basemap_button.id = "map_basemap_button";
+  basemap_button.setAttribute("role","button");
+  basemap_button.setAttribute("title","Basemap gallery");
   basemap_button.addEventListener('click', function(evt){
     if (this.classList.contains("esri-icon-basemap")) {
       $(".esri-basemap-gallery").appendTo(".basemap-gallery-container").show();
@@ -64,6 +62,8 @@ require([
   // Print
   var print_button = document.createElement('div');
   print_button.className = "esri-icon-printer esri-widget--button esri-widget esri-interactive";
+  print_button.setAttribute("role","button");
+  print_button.setAttribute("title","Print");
   print_button.addEventListener('click', function(evt){
     // action
   });
@@ -75,9 +75,13 @@ require([
     unit: "dual"
   });
   view.ui.add(scaleBar, "bottom-left");
+
+  // Loading icon
+  view.watch('updating', function(evt){
+    if(evt === true){
+      document.querySelector(".loading").style.display = 'flex';
+    }else{
+      document.querySelector(".loading").style.display = 'none';
+    }
+  })
 });
-
-
-
-
-

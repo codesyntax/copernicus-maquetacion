@@ -1,0 +1,87 @@
+/* Checkbox */
+.ccl-form-check-label {
+  cursor: pointer;
+}
+.ccl-form .ccl-form-check-input:checked + .ccl-form-check-label:before {
+  z-index: 1;
+}
+.ccl-form .ccl-checkbox[type="checkbox"]:checked + .ccl-form-check-label:before {
+  top: 0.25rem;
+}
+.ccl-form .ccl-form-check-input + .ccl-form-check-label::after, .ccl-form .form-check-input + label::after {
+  background-color: white;
+}
+
+/* Radio */
+.ccl-form .ccl-form-check-input:checked + .ccl-form-check-label.ccl-form-radio-label:before {
+  /* width: 1rem;
+  height: 1rem;
+  border: solid 6px #a0b128;
+  background-color: white; */
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  left: 0;
+  transform: none;
+  right: 0;
+  border-radius: 10px;
+  width: 0.5rem;
+  height: 0.5rem;
+  border: none;
+  background-color: #a0b128;
+  margin: 0.25rem;
+}
+.ccl-color_land .ccl-form-check-input + .ccl-form-check-label.ccl-form-radio-label::after {
+  border-radius: 10px;
+}
+.ccl-color_land .ccl-form-check-input:checked + .ccl-form-check-label.ccl-form-radio-label::after {
+  border-radius: 10px;
+}
+.ccl-form-radio-label div {
+  font-size: 0.95rem;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Select */
+.ccl-select-items .select-hidden-option {
+  display: none;
+}
+.ccl-select-items .select-option-placeholder {
+  display: none;
+}
+.ccl-select-items {
+  max-height: 20rem;
+  overflow-y: auto;
+}
+
+/* File */
+input[type=file]::-webkit-file-upload-button {
+  background: #a0b128;
+  color: white;
+  padding: 0.75rem 1rem;
+  margin-right: 0.5rem;
+  border: none;
+}
+input[type=file]::file-selector-button {
+  background: #a0b128;
+  color: white;
+  padding: 0.75rem 1rem;
+  margin-right: 0.5rem;
+  border: none;
+}
+.ccl-form input[type=file] {
+  height: auto;
+  padding: 0;
+}
+
+/* Error */
+.ccl-footer-form + .ccl-feedback-message--error {
+  color: crimson !important;
+  margin-bottom: 1rem;
+  margin-top: -0.5rem;
+}
+.ccl-form .ccl-feedback-message--error {
+  margin-top: 0.5rem;
+  color: crimson !important;
+}

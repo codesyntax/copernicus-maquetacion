@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,16 +12,16 @@
     <script src="./lib/jquery.min.js"></script>
     <script src="./lib/slick.min.js"></script>
     <script src="./lib/ccl-functions.js"></script>
-    <link rel="stylesheet" type="text/css" href="./lib/ccl.css" media="all">
-    <link rel="stylesheet" href="./lib/bootstrap-grid.min.css" />
+    <link rel="stylesheet" type="text/css" href="./lib/ccl/css/ccl.css" media="all">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="./lib/font-awesome/css/all.min.css" crossorigin="anonymous">
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <!-- Scripts -->
     <script src="./js/common-scripts.js"></script>
+    <script src="./js/index.js"></script>
   </head>
-  <body class="ccl-style ccl-color_land page-loading">	
+  <body class="ccl-style ccl-color_land">	
     <header class="ccl-header">
       <div class="ccl-header-tools">
         <div class="ccl-container">
@@ -29,23 +29,23 @@
           <div class="ccl-search-collapse-button"><span class="ccl-icon-zoom"></span></div>
           <div class="ccl-header-tools-container">
             <ul class="ccl-header-menu-tools">
-              <li class="header-dropdown"><a href="#">News <span class="ccl-icon-chevron-thin-down"></span></a>
+              <li class="header-dropdown"><a href="./news.html">News<span class="ccl-icon-chevron-thin-down"></span></a>
                 <ul>
-                  <li><a href="#">Newsletter</a></li>
+                  <li><a href="./newsletter.html">Newsletter</a></li>
                 </ul>
               </li>
-              <li><a href="#">Work opportunities</a></li>
-              <li class="header-dropdown"><a href="#">Technical support <span class="ccl-icon-chevron-thin-down"></span></a>
+              <li><a href="./work-opportunities.html">Work opportunities</a></li>
+              <li class="header-dropdown"><span>Technical support<span class="ccl-icon-chevron-thin-down"></span></span>
                 <ul>
-                  <li><a href="#">FAQs</a></li>
-                  <li><a href="#">Write to service desk</a></li>
-                  <li><a href="#">How-to guides</a></li>
+                  <li><a href="./faq/faq-general.html">FAQs</a></li>
+                  <li><a href="./service-desk.html">Write to service desk</a></li>
+                  <li><a href="./guides.html">How-to guides</a></li>
                 </ul>
               </li>
               <li  class="header-vertical-line"><div>|</div></li>
-              <li><a class="header-login-link">Login/Register</a></li>
+              <li><span class="header-login-link">Login/Register</span></li>
             </ul>
-            <form class="ccl-header-search"><input type="text" placeholder="search"><button type="submit"><span class="ccl-icon-zoom"></span></button></form>
+            <form class="ccl-header-search"><input type="text" placeholder="search" aria-label="Search"><button type="submit" aria-label="Search"><span class="ccl-icon-zoom"></span></button></form>
             <div class="ccl-header-lang-switcher" id="block-languageswitcher">
               <div class="ccl-language-list-container">
                 <ul class="ccl-language-list">
@@ -62,11 +62,11 @@
         <div class="ccl-container">
           <div class="ccl-header-logos-container">
             <div class="ccl-header-logo-container">
-              <a href="http://www.copernicus.eu/">
-                <img class="ccl-header-logo" src="./img/EU-Cop-logo.svg"/>
+              <a href="http://www.copernicus.eu/" target="_blank" rel="noreferrer">
+                <img class="ccl-header-logo" src="./img/EU-Cop-logo.svg" alt="Copernicus logo"/>
               </a>
               <a href="./">
-                <img class="ccl-header-logo ccl-service-button" src="./img/ccl-icon-land-text.svg"/>
+                <img class="ccl-header-logo ccl-service-button" src="./img/ccl-icon-land-text.svg" alt="Home"/>
               </a>
             </div>
           </div>
@@ -83,7 +83,6 @@
         </div>
       </div>
     </header>
-
     <div class="ccl-banner-top-container">
       <div class="ccl-container">
         <div class="ccl-banner-top-main-block-title">
@@ -96,7 +95,7 @@
     <div class="ccl-banner-top-bar"></div>
     <div class="home-products-container">
       <div class="home-product home-product-main">
-        <h4>Explore our products</h4>
+        <h3>Explore our products</h3>
       </div>
       <div class="home-product">
         <div class="home-product-title">Land Cover and Land Use Mapping</div>
@@ -116,227 +115,249 @@
     </div>
     <div class="home-datasets-container">
       <div class="ccl-container">
-        <h4>Find and download data</h4>
+        <h3>Find and download data</h3>
         <div class="home-datasets-search">
           <form class="ccl-form search-form">
-            <input type="text" class="ccl-text-input" id="home_search_datasets" name="homeSearchDatasets" placeholder="Search datasets">
-            <button class="ccl-button" type="submit">
+            <input type="text" class="ccl-text-input" id="home_search_datasets" name="homeSearchDatasets" placeholder="Search datasets" aria-label="Search datasets">
+            <button class="ccl-button" type="submit" aria-label="Search">
               <span class="ccl-icon-zoom"></span>
             </button>
           </form>
         </div>
         <div class="home-datasets-text">
-          <span>More than XXX.XXX datasets in our </span><a href="">Dataset catalogue</a>
+          <span>More than XXX.XXX datasets in our </span><a href="./dataset-catalogue.html">Dataset catalogue</a>
         </div>
       </div>
     </div>
     <div class="home-map-container">
       <div class="ccl-container">
         <div class="home-map-banner">
-          <h4>View our products on the map</h4>
-          <a class="ccl-button ccl-button-green" href="">Open map viewer</a>
+          <h3>View our products on the map</h3>
+          <a class="ccl-button ccl-button-green" href="./map-viewer.html">Open map viewer</a>
         </div>
       </div>
     </div>
     <div class="home-meet-container">
       <div class="ccl-container">
-        <h4>Meet our users</h4>
+        <h3>Meet our users</h3>
         <div class="ccl-block-row ccl-no-margin-bottom">
           <div class="ccl-list-items ccl-container ccl-list-carousel">
             <div class="ccl-list-item ">
               <div class="ccl-list-item-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" title="Placeholder image" alt="Placeholder image">
+                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image">
               </div>
-              <h5>This is a title 1</h5>
+              <h4>This is a title 1</h4>
               <p>This is a text with some info about the product. This is a text with some info about the product. </p>
             </div>
             <div class="ccl-list-item ">
               <div class="ccl-list-item-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" title="Placeholder image" alt="Placeholder image">
+                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image">
               </div>
-              <h5>This is a title 2</h5>
+              <h4>This is a title 2</h4>
               <p>This is a text with some info about the product. This is a text with some info about the product. </p>
             </div>
             <div class="ccl-list-item ">
               <div class="ccl-list-item-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" title="Placeholder image" alt="Placeholder image">
+                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image">
               </div>
-              <h5>This is a title 3</h5>
+              <h4>This is a title 3</h4>
               <p>This is a text with some info about the product. This is a text with some info about the product. </p>
             </div>
             <div class="ccl-list-item ">
               <div class="ccl-list-item-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" title="Placeholder image" alt="Placeholder image">
+                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image">
               </div>
-              <h5>This is a title 4</h5>
+              <h4>This is a title 4</h4>
               <p>This is a text with some info about the product. This is a text with some info about the product. </p>
             </div>
             <div class="ccl-list-item ">
               <div class="ccl-list-item-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" title="Placeholder image" alt="Placeholder image">
+                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image">
               </div>
-              <h5>This is a title 5</h5>
+              <h4>This is a title 5</h4>
               <p>This is a text with some info about the product. This is a text with some info about the product. </p>
             </div>
             <div class="ccl-list-item ">
               <div class="ccl-list-item-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" title="Placeholder image" alt="Placeholder image">
+                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image">
               </div>
-              <h5>This is a title 6</h5>
+              <h4>This is a title 6</h4>
               <p>This is a text with some info about the product. This is a text with some info about the product. </p>
             </div>
           </div>
         </div>
-        <a class="ccl-button ccl-button-white" href="">All use cases</a>
+        <a class="ccl-button ccl-button--default" href="./use-cases.html">All use cases</a>
       </div>
     </div>
-    <div class="home-news-events-container">
+    <div class="home-news-events-block">
       <div class="ccl-container tab-container">
-        <input class="radio" id="news_tab" name="group" type="radio" checked>
-        <input class="radio" id="events_tab" name="group" type="radio">
-        <div class="tabs">
-          <label class="tab" id="news_label" for="news_tab"><i class="far fa-newspaper"></i>News</label>
-          <label class="tab" id="events_label" for="events_tab"><i class="far fa-calendar-alt"></i>Events</label>
+        <div class="tabs" role="tablist">
+          <span class="tab tab-selected" id="news_tab" role= "tab" aria-controls="news_panel" aria-selected="true"><i class="far fa-newspaper"></i>News</span>
+          <span class="tab" id="events_tab" role= "tab" aria-controls="events_panel" aria-selected="false"><i class="far fa-calendar-alt"></i>Events</span>
         </div>
         <div class="panels">
-          <div class="panel" id="news_panel">
-            <div class="home-news-container">
-              <div class="home-news-left">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" title="Placeholder image" alt="Placeholder image">
+          <div class="panel panel-selected" id="news_panel" role="tabpanel" aria-hidden="false">
+            <div class="news-line">
+              <div class="news-image">
+                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image">
               </div>
-              <div class="home-news-text">
-                <h5 class="home-news-title">News title</h5>
-                <div class="home-news-date">dd/mm/yyyy</div>
-                <p class="home-news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              </div>
-            </div>
-            <div class="home-news-container">
-              <div class="home-news-left">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" title="Placeholder image" alt="Placeholder image">
-              </div>
-              <div class="home-news-text">
-                <h5 class="home-news-title">News title</h5>
-                <div class="home-news-date">dd/mm/yyyy</div>
-                <p class="home-news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <div class="news-text">
+                <div class="news-title">
+                  <a href="./news/news-detail.html">News title</a>
+                </div>
+                <div class="news-date">dd/mm/yyyy</div>
+                <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
               </div>
             </div>
-            <div class="home-news-container">
-              <div class="home-news-left">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" title="Placeholder image" alt="Placeholder image">
+            <div class="news-line">
+              <div class="news-image">
+                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image">
               </div>
-              <div class="home-news-text">
-                <h5 class="home-news-title">News title</h5>
-                <div class="home-news-date">dd/mm/yyyy</div>
-                <p class="home-news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <div class="news-text">
+                <div class="news-title">
+                  <a href="./news/news-detail.html">News title</a>
+                </div>
+                <div class="news-date">dd/mm/yyyy</div>
+                <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
               </div>
             </div>
-            <a class="ccl-button ccl-button-white" href="">View all news</a>
+            <div class="news-line">
+              <div class="news-image">
+                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image">
+              </div>
+              <div class="news-text">
+                <div class="news-title">
+                  <a href="./news/news-detail.html">News title</a>
+                </div>
+                <div class="news-date">dd/mm/yyyy</div>
+                <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+            <a class="ccl-button ccl-button--default" href="./news.html">View all news</a>
           </div>
-          <div class="panel" id="events_panel">
-            <div class="home-events-container">
-              <div class="home-events-left">
-                <div class="home-event-when">
-                  <div class="home-event-when-title">When</div>
-                  <div class="home-event-when-text">Month day, year</div>
-                </div>
-                <div class="home-event-where">
-                  <div class="home-event-where-title">Where</div>
-                  <div class="home-event-where-text">Virtual</div>
-                </div>
+          <div class="panel" id="events_panel" role="tabpanel" aria-hidden="true">
+            <div class="event-line">
+              <div class="event-image">
+                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image">
               </div>
-              <div class="home-events-text">
-                <h5 class="home-events-title">Event title</h5>
-                <div class="home-events-date">dd/mm/yyyy</div>
-                <p class="home-events-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              </div>
-            </div>
-            <div class="home-events-container">
-              <div class="home-events-left">
-                <div class="home-event-when">
-                  <div class="home-event-when-title">When</div>
-                  <div class="home-event-when-text">Month day, year</div>
+              <div class="event-text">
+                <div class="event-title">
+                  <a href="./events/event-detail.html">Event title</a>
                 </div>
-                <div class="home-event-where">
-                  <div class="home-event-where-title">Where</div>
-                  <div class="home-event-where-text">Virtual</div>
+                <div class="event-when">
+                  <i class="far fa-calendar-alt"></i>
+                  <div class="event-when-text">dd/mm/yyyy - dd/mm/yyyy</div>
                 </div>
-              </div>
-              <div class="home-events-text">
-                <h5 class="home-events-title">Event title</h5>
-                <div class="home-events-date">dd/mm/yyyy</div>
-                <p class="home-events-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="event-where">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="event-where-text">Virtual</div>
+                </div>
+                <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
               </div>
             </div>
-            <div class="home-events-container">
-              <div class="home-events-left">
-                <div class="home-event-when">
-                  <div class="home-event-when-title">When</div>
-                  <div class="home-event-when-text">Month day, year</div>
-                </div>
-                <div class="home-event-where">
-                  <div class="home-event-where-title">Where</div>
-                  <div class="home-event-where-text">Virtual</div>
-                </div>
+            <div class="event-line">
+              <div class="event-image">
+                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image">
               </div>
-              <div class="home-events-text">
-                <h5 class="home-events-title">Event title</h5>
-                <div class="home-events-date">dd/mm/yyyy</div>
-                <p class="home-events-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <div class="event-text">
+                <div class="event-title">
+                  <a href="./events/event-detail.html">Event title</a>
+                </div>
+                <div class="event-when">
+                  <i class="far fa-calendar-alt"></i>
+                  <div class="event-when-text">dd/mm/yyyy - dd/mm/yyyy</div>
+                </div>
+                <div class="event-where">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="event-where-text">Virtual</div>
+                </div>
+                <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
               </div>
             </div>
-            <a class="ccl-button ccl-button-white" href="">View all events</a>
+            <div class="event-line">
+              <div class="event-image">
+                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image">
+              </div>
+              <div class="event-text">
+                <div class="event-title">
+                  <a href="./events/event-detail.html">Event title</a>
+                </div>
+                <div class="event-when">
+                  <i class="far fa-calendar-alt"></i>
+                  <div class="event-when-text">dd/mm/yyyy - dd/mm/yyyy</div>
+                </div>
+                <div class="event-where">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="event-where-text">Virtual</div>
+                </div>
+                <p class="event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+            <a class="ccl-button ccl-button--default" href="./events.html">View all events</a>
           </div>
         </div>
       </div>
     </div>
+
   <footer class="ccl-footer">
     <div class="ccl-footer-main">
-      <div class="ccl-footer-logo"><a href="http://www.copernicus.eu/" target="_blank"><img src="./img/copernicus_eu_logo_white.svg" class="ccl-footer-logo-img"/></a></div>
+      <div class="ccl-footer-logo"><a href="http://www.copernicus.eu/" target="_blank" rel="noreferrer"><img src="./img/copernicus_eu_logo_white.svg" class="ccl-footer-logo-img" alt="Copernicus"/></a></div>
       <div class="ccl-container ccl-container-flex">
         <div class="ccl-footer-col ">
           <div class="ccl-footer-col-title">Copernicus Services</div>
           <div class="ccl-footer-services">
-            <a href="https://atmosphere.copernicus.eu/" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-atmosphere">
-            <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-atmosphere.svg"/>	Atmosphere
+            <a href="https://atmosphere.copernicus.eu/" target="_blank" rel="noreferrer" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-atmosphere">
+            <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-atmosphere.svg" alt=""/>Atmosphere
             </a>
-            <a href="https://marine.copernicus.eu/" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-marine">
-            <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-marine.svg"/>Marine
+            <a href="https://marine.copernicus.eu/" target="_blank" rel="noreferrer" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-marine">
+            <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-marine.svg" alt=""/>Marine
             </a>
-            <a href="https://land.copernicus.eu/" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-land">
-            <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-land.svg"/>Land
+            <a href="https://land.copernicus.eu/" target="_blank" rel="noreferrer" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-land">
+            <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-land.svg" alt=""/>Land
             </a>
-            <a href="https://www.copernicus.eu/en/services/security" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-security">
-            <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-security.svg"/>Security
+            <a href="https://www.copernicus.eu/en/services/security" target="_blank" rel="noreferrer" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-security">
+            <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-security.svg" alt=""/>Security
             </a>
-            <a href="https://climate.copernicus.eu/" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-climate">
-            <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-climate.svg"/>Climate Change	
+            <a href="https://climate.copernicus.eu/" target="_blank" rel="noreferrer" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-climate">
+            <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-climate.svg" alt=""/>Climate Change
             </a>
-            <a href="https://emergency.copernicus.eu/" target="_blank" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-emergency">
-            <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-emergency.svg"/>Emergency	
+            <a href="https://emergency.copernicus.eu/" target="_blank" rel="noreferrer" class="ccl-service-button ccl-service-button-link ccl-service-button-w ccl-service-button-emergency">
+            <img class="ccl-svg ccl-service-button-icon" src="./img/ccl-icon-emergency.svg" alt=""/>Emergency
             </a>
           </div>
         </div>
         <div class="ccl-footer-col">
           <div class="ccl-footer-form-title">Newsletter</div>
-          <form class="ccl-footer-form"><input type="text" placeholder="Enter an email adress"><button type="submit">Subscribe</button></form>
+          <form class="ccl-footer-form">
+            <input type="text" class="footer-privacy-input" placeholder="Enter an email adress" aria-label="Enter an email adress"><button class="footer-privacy-button" type="submit">Subscribe</button>
+          </form>
+          <div class="ccl-form footer-privacy-check">
+            <div class="ccl-form-group">
+              <input type="checkbox" id="footer_privacy" name="footerPrivacy" value="" class="ccl-checkbox  ccl-form-check-input" aria-required="true">
+              <label class="ccl-form-check-label" for="footer_privacy">
+                I agree to the <a href="./personal-data-protection.html" target="_blank">privacy policy.</a>
+              </label>
+            </div>
+          </div>
           <div class="ccl-footer-col-title">Follow us</div>
           <div class="ccl-footer-social">
-            <a href="https://www.youtube.com/channel/UCpuwnbuwGG20enAdE50g6TA"><span class="ccl-icon-youtube"></span></a>
-            <a href="https://twitter.com/CopernicusLand"><span class="ccl-icon-twitter"></span></a>
-            <a href="https://www.facebook.com/CopernicusEU"><span class="ccl-icon-facebook"></span></a>
+            <a href="https://www.youtube.com/channel/UCpuwnbuwGG20enAdE50g6TA" target="_blank" rel="noreferrer" aria-label="Youtube"><span class="ccl-icon-youtube"></span></a>
+            <a href="https://twitter.com/CopernicusLand" target="_blank" rel="noreferrer" aria-label="Twitter"><span class="ccl-icon-twitter"></span></a>
+            <a href="https://www.facebook.com/CopernicusEU" target="_blank" rel="noreferrer" aria-label="Facebook"><span class="ccl-icon-facebook"></span></a>
         </div>
         </div>
         <div class="ccl-footer-col">
           <div class="ccl-footer-col-title">Implemented by</div>
           <div class="footer-implemented footer-implemented-eea">
-                          <a href="https://www.eea.europa.eu/" target="_blank">
-                <img class="ccl-svg ccl-service-button-icon" src="./img/eea-logo.svg"/>
-              </a>
+            <a href="https://www.eea.europa.eu/" target="_blank" rel="noreferrer">
+              <img class="ccl-svg ccl-service-button-icon" src="./img/eea-logo.svg" alt="EEA"/>
+            </a>
           </div>
           <div class="footer-implemented footer-implemented-ec">
-              <a href="https://ec.europa.eu/" target="_blank">
-                <img class="ccl-svg ccl-service-button-icon" src="./img/ec-logo-white.svg"/>
+              <a href="https://ec.europa.eu/" target="_blank" rel="noreferrer">
+                <img class="ccl-svg ccl-service-button-icon" src="./img/ec-logo-white.svg" alt="DG Joint Research Center"/>
               </a>
+              <span>DG Joint Research Center</span>
           </div>
           <div class="ccl-footer-col-title">Expert support provided by</div>
           <p>EIONET Action Group on Land monitoring in Europe (EAGLE)</p>
@@ -346,19 +367,19 @@
     <div class="ccl-footer-bottom">
       <ul class="ccl-footer-legal">
         <li>
-          <a class="ccl-link" href="#">Disclaimer</a>
+          <a class="ccl-link" href="./disclaimer.html">Disclaimer</a>
         </li>
         <li>
-          <a class="ccl-link" href="#">Data policy</a>
+          <a class="ccl-link" href="./data-policy.html">Data policy</a>
         </li>
         <li>
-          <a class="ccl-link" href="#">Personal data protection</a>
+          <a class="ccl-link" href="./personal-data-protection.html">Personal data protection</a>
         </li>
         <li>
-          <a class="ccl-link" href="#">Cookies</a>
+          <a class="ccl-link" href="./cookies.html">Cookies</a>
         </li>
         <li>
-          <a class="ccl-link" href="#">Sitemap</a>
+          <a class="ccl-link" href="./sitemap.html">Sitemap</a>
         </li>
       </ul>
     </div>
@@ -367,27 +388,27 @@
       <div class="modal-background">
         <div class="modal-container">
           <div class="modal-close">
-            <span class="ccl-icon-close"></span>
+            <span class="ccl-icon-close" aria-label="Close"></span>
           </div>
           <div class="modal-title">Login</div>
           <div class="modal-content">
             <div class="modal-login-field">
               <i class="fas fa-user"></i>
-              <input type="text" class="ccl-text-input" placeholder="User name">
+              <input type="text" class="ccl-text-input" placeholder="User name" aria-label="User name">
             </div>
             <div class="modal-login-field">
               <i class="fas fa-unlock-alt"></i>
-              <input type="text" class="ccl-text-input" placeholder="Password">
+              <input type="password" class="ccl-text-input" placeholder="Password" aria-label="Password">
             </div>
-            <a href="">Forgot your password?</a>
+            <a href="./reset-password.html">Forgot your password?</a>
           </div>
-          <button class="ccl-button ccl-button-green">Login</button>
+          <button class="ccl-button ccl-button-green modal-login-button">Login</button>
           <hr>
           <div class="modal-title">New user</div>
           <div class="modal-text">
-            Registration is free. Personal data will only be used internally. For more details, see the <a href="">Privacy policy and terms of use</a>.
+            Registration is free. Personal data will only be used internally. For more details, see the <a href="./personal-data-protection.html" target="_blank">Personal data protection</a>.
           </div>
-          <button class="ccl-button ccl-button-white">Register</button>
+          <a href="./register.html" class="ccl-button ccl-button--default">Register</a>
         </div>
       </div>
     </div>

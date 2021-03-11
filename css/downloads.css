@@ -1,0 +1,77 @@
+/* Downloads */
+.download-block {
+  background-color: #a0b1280f;
+  padding: 1.75rem;
+  display: flex;
+  position: relative;
+}
+.download-block:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+.download-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.75rem;
+  color: #adb0b8;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.download-close:hover {
+  color: #273b4b;
+  transition: 0.3s ease-out;
+}
+.download-icon {
+  border-right: solid 1px #a0b128;
+  margin-right: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 3rem;
+  color: #a0b128;
+}
+.download-container {
+  width: 100%;
+}
+.download-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.download-size {
+  margin-bottom: 1rem;
+}
+.download-progress-package {
+  margin-bottom: 1rem;
+}
+.download-progress-status {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.download-progress-bar {
+  margin: 1rem 0;
+  height: 1rem;
+  position: relative;
+}
+.download-progress-bar::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: solid 1px #a0b128;
+  border-radius: 1rem;
+}
+.download-progress-bar-percentage {
+  background-color: #a0b128;
+  border-radius: 1rem;
+  height: 100%;
+  width: 50%;
+}
+.download-progress-buttons .ccl-button:first-of-type {
+  margin-right: 1rem;
+}
+.download-link-expires {
+  margin-left: 0.5rem;
+  font-size: 0.85rem;
+  color: #adb0b8;
+}
+.download-link-expires-days {
+  margin: 0 0.25rem;
+}

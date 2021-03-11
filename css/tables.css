@@ -1,0 +1,35 @@
+/* Table */
+.custom-table {
+  margin: 1rem 0;
+}
+.custom-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.custom-table th {
+  text-align: left;
+  color: #a0b128;
+  border-bottom: solid 1px #a0b128;
+  padding: 0 0.75rem 0.75rem 0;
+}
+.custom-table td {
+  padding: 0.75rem 0.75rem 0.75rem 0;
+}
+.custom-table td:last-of-type {
+  padding: 0.75rem 0;
+}
+.custom-table tr:not(:last-of-type) td {  
+  border-bottom: solid 1px #a0b128;
+}
+.tag {
+  padding: 0.25rem 0.5rem;
+  color: white;
+  font-weight: 200;
+  border-radius: 0.25rem;
+}
+.tag-raster {
+  background-color: #adb0b8;
+}
+.tag-vector {
+  background-color: #273b4b;
+}

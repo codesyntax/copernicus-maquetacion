@@ -1,0 +1,976 @@
+@import url("cards.css");
+@import url("buttons.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("forms.css");
+@import url("container.css");
+@import url("left-menu.css");
+@import url("dropdown.css");
+@import url("modals.css");
+@import url("tab-menu.css");
+@import url("messages.css");
+@import url("pagination.css");
+@import url("tables.css");
+@import url("faqs.css");
+@import url("downloads.css");
+
+html, .ccl-style {
+  font-size: 16px;
+}
+html * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 1px;
+  background: #adb0b8;
+}
+hr + main {
+  margin-bottom: 2rem;
+}
+main:not(.map-main) {
+  min-height: 70vh;
+}
+.map-main {
+  margin-bottom: 0;
+}
+.ccl-style h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.ccl-style h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.ccl-style h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.ccl-style p {
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  margin-bottom: 1rem;
+}
+.ccl-style li {
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+.ul-block, .ol-block {
+  margin-left: 1.125rem;
+  margin-bottom: 2rem;
+}
+.ul-block .ul-block {
+  margin-bottom: 1rem;
+}
+.ul-block li::marker, .ol-block li::marker {
+  color: #a0b128;
+}
+
+/* Main */
+.ccl-breadcrumb {
+  margin-bottom: 1rem;
+}
+.ccl-breadcrumb .ccl-breadcrumb__segment {
+  font-size: 1rem;
+}
+.ccl-style .page-title {
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #a0b128;
+  margin-bottom: 1.5rem;
+}
+.page-description {
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+.right-content .content-block:last-of-type {
+  margin-bottom: 0;
+}
+.right-content p + .card-container {
+  margin-top: 2rem;
+}
+.card-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+main .search-form .ccl-text-input {
+  border: solid 1px #a0b128;
+  padding: 0.5rem 1rem;
+  color: #212529 !important;
+  font-size: 1rem;
+  border-radius: 0;
+}
+main .search-form .ccl-text-input::placeholder {
+  color: #adb0b8;
+}
+main .search-form {
+  display: flex;
+  margin-bottom: 2rem;
+}
+main .search-form + hr, main .page-description + hr, main .search-results + hr {
+  background-color: #adb0b8;
+  margin-bottom: 1.5rem;
+}
+main .search-form button {
+  background-color: #a0b128;
+  color: white;
+  margin: 0;
+  padding: 0 1rem;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+main .search-form button:hover {
+  background-color: #7c8921;
+}
+.info-icon {
+  color: #a0b128;
+  margin-left: 0.5rem;
+}
+.info-icon:hover {
+  color: #7c8921;
+}
+.info-icon i {
+  cursor: pointer
+}
+.ccl-select-container .ccl-select-selected::after {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+}
+
+/* Home */
+@media (min-width: 1200px) {
+  .ccl-header .ccl-header-tools .ccl-container {
+    justify-content: flex-end;
+  }
+}
+.ccl-banner-top-container {
+  background-image: url('../img/home-main-background.png');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+}
+@media (max-width: 1250px) {
+  .ccl-banner-top-container {
+    padding: 4rem 1rem;
+  }
+}
+.ccl-color_land .ccl-banner-top-main-block-title {
+  background-color: #a0b128bf;
+}
+.ccl-banner-top-container h1 {
+  color: white;
+}
+.ccl-banner-top-container h2 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: white;
+}
+.ccl-banner-top-container h3 {
+  color: white;
+  font-weight: normal;
+  margin-bottom: 0;
+  font-size: 1.125rem;
+}
+.ccl-color_land .ccl-banner-top-bar {
+  height: 2rem;
+}
+.ccl-banner-top-container .ccl-banner-top-main-block-title {
+  max-width: 100%;
+  padding: 1.5rem;
+}
+@media (min-width: 576px) { 
+  .ccl-banner-top-container .ccl-banner-top-main-block-title {
+    max-width: 90%;
+  } 
+}
+@media (min-width: 768px) {
+  .ccl-banner-top-container .ccl-banner-top-main-block-title {
+    max-width: 60%;
+  }  
+}
+.home-products-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-product {
+  width: 33.3333%;
+  border: 1px solid #a0b128;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  height: 14vw;
+}
+@media (max-width: 992px) { 
+  .home-product {
+    width: 50%;
+    height: 21vw;
+  } 
+}
+@media (max-width: 480px) { 
+  .home-product {
+    width: 100%;
+    height: 28vw;
+  } 
+}
+.home-datasets-container {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #a0b1280f;
+}
+@media (min-width: 576px) { 
+  .home-datasets-container .ccl-container {
+    width: 80%;
+  } 
+}
+@media (min-width: 768px) {
+  .home-datasets-container .ccl-container {
+    width: 60%;
+  }  
+}
+@media (min-width: 1200px) {
+  .home-datasets-container .ccl-container {
+    width: 40%;
+  }  
+}
+.home-map-container {
+  background: url(../img/home-map-background.jpg) no-repeat center;
+  background-size: cover;
+  padding: 4rem 1rem;
+}
+.home-datasets-search {
+  margin-bottom: 1rem; 
+}
+.home-datasets-search .ccl-form {
+  display: flex;
+}
+.home-datasets-search .ccl-form input {
+  border: solid 1px #a0b128;
+  padding: 0.5rem 1rem;
+  color: #212529 !important;
+  font-size: 0.85rem;
+  border-radius: 0;
+}
+.home-datasets-search input::placeholder {
+  color: #adb0b8;
+}
+.home-datasets-search button {
+  background-color: #a0b128 !important;
+  margin: 0;
+  padding: 0;
+  border-color: #a0b128;
+  color: white;
+  margin-left: 0.25rem;
+  width: 46px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-datasets-search button:hover {
+  background-color: #7c8921 !important;
+}
+.home-datasets-text {
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.home-map-banner {
+  padding: 1.5rem;
+  background-color: #ffffffb3;
+  width: 100%;
+}
+.home-map-banner h4 {
+  margin-bottom: 1rem;
+}
+@media (min-width: 576px) { 
+  .home-map-banner {
+    width: 80%;
+  } 
+}
+@media (min-width: 768px) {
+  .home-map-banner {
+    width: 60%;
+  }  
+}
+@media (min-width: 1200px) {
+  .home-map-banner {
+    width: 40%;
+  }  
+}
+.home-meet-container {
+  padding: 3rem 3rem;
+}
+.home-meet-container h4 {
+  text-align: center;
+  color: #a0b128;
+  margin: 1rem 0;
+}
+.home-meet-container .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.slick-slide h5 {
+  margin: 1rem 0;
+  color: #a0b128;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.slick-slide p {
+  font-size: 1rem;
+}
+.slick-slide img {
+  opacity: 0.5;
+  border: none !important;
+  border-radius: 1.5rem;
+}
+.slick-slide:focus {
+  outline: none;
+}
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
+  cursor: auto;
+}
+.home-news-events-block {
+  padding: 3rem 1rem;
+  background-color: #a0b1280f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-news-events-block i {
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+.home-news-events-block .ccl-button {
+  margin-top: 2rem;
+}
+
+/* Products */
+.product-block {
+  margin-bottom: 3rem;
+}
+.product-block:last-of-type {
+  margin-bottom: 0;
+}
+.product-block h2 {
+  font-size: 1.25rem;
+}
+
+/* Product detail */
+.left-menu-detail {
+  margin-bottom: 2rem;
+}
+.left-menu-detail .menu-detail-image {
+  margin-bottom: 0.25rem;
+  height: 8rem;
+}
+.left-menu-detail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+.left-menu-detail .menu-detail-button:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+.left-menu-detail .ccl-button {
+  width: 100%;
+}
+.product-detail-text {
+  margin-bottom: 3rem;
+}
+.product-detail-datasets {
+  margin-bottom: 2rem;
+}
+.product-detail-datasets h2 {
+  font-size: 1.125rem;
+}
+.product-detail-documents h2 {
+  font-size: 1.125rem;
+}
+
+/* Dataset detail */
+.download-dataset-metadata {
+  float: right;
+}
+.validation-citation-container {
+  margin-bottom: 2rem;
+}
+.validation-title, .citation-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #a0b128;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: solid 1px #a0b128;
+}
+.validation-citation-container p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.validation-citation-container.citation-container {
+  margin-bottom: 0;
+}
+.dataset-info-container {
+  margin-bottom: 3rem;
+}
+.dataset-metadata-container:not(:last-of-type) {
+  margin-bottom: 3rem;
+}
+.dataset-info-documents, .dataset-info-products {
+  margin-bottom: 2rem;
+}
+.dataset-info-documents h2 {
+  font-size: 1.125rem;
+}
+.dataset-info-products h2 {
+  font-size: 1.5rem;
+}
+.dataset-info-field:not(:last-of-type) {
+  margin-bottom: 1.25rem;
+}
+.dataset-info-field h3 {
+  font-size: 1.125rem;
+  display: inline-block;
+}
+.dataset-field-description {
+  margin-left: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+.login-block {
+  width: 100%;
+  margin-bottom: 2rem;
+  background-color: #a0b1280f;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .login-block {
+    float: right;
+    text-align: center;
+    margin-left: 1rem;
+    width: calc(50% - 1rem);
+  }
+}
+.login-content {
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+}
+.login-block .ccl-button {
+  margin-bottom: 0.5rem;
+}
+.login-block p {
+  font-size: 1rem;
+  margin: 0;
+}
+.content-block .ccl-button {
+  margin-top: 1rem;
+}
+.dataset-download-area {
+  margin-bottom: 3rem;
+}
+
+/* Map viewer */
+.map {
+  padding: 0;
+  margin: 0;
+  height: 600px;
+  width: 100%;
+}
+.esri-view .esri-view-surface--inset-outline:focus::after {
+  outline: none !important;
+}
+.esri-component.esri-zoom.esri-widget {
+  margin-bottom: 0;
+  box-shadow: none;
+}
+.esri-widget--button {
+  background-color: #a0b128cc;
+  color: white;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  line-height: 1.1rem;
+}
+.esri-widget--button:hover {
+  background-color: #7c8921;
+  color: white;
+}
+.esri-widget--button.esri-disabled [class*=esri-icon] {
+  color: white;
+}
+.esri-widget--button.esri-disabled {
+  background-color: #cfd893;
+  cursor: auto;
+}
+.esri-basemap-gallery {
+  display: none;
+}
+.esri-view-height-small .esri-ui-corner .esri-component.esri-widget--panel-height-only {
+  max-height : 260px;
+}
+.esri-basemap-gallery__item:first-child {
+  margin: 0;
+}
+.basemap-gallery-container {
+  display: flex;
+}
+.esri-basemap-gallery {
+  margin: 0 !important;
+} 
+.basemap-gallery-container {
+  box-shadow: none !important;
+}
+.map-menu {
+  display: none;
+}
+.map-menu * {
+  font-size: 1rem;
+}
+.map-menu.tab-container .tab {
+  background: white;
+  color: #273b4b;
+  font-weight: bold;
+  padding: 1rem;
+  border-bottom: solid 4px white;
+}
+.map-menu.tab-container .tab-selected {
+  background: white;
+  border-bottom: solid 4px #a0b128;
+}
+.map-menu.tab-container .tabs {
+  border-bottom: solid 1px #adb0b8;
+}
+.map-left-menu-container {
+  display: flex;
+  box-shadow: none !important;
+}
+.map-menu .ccl-fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.map-menu .ccl-fieldset .ccl-dropdown__link {
+  margin-top: 0;
+}
+.map-menu .ccl-form-legend {
+  line-height: inherit;
+}
+.map-menu .ccl-expandable__button[aria-expanded='true']::after {
+  content: '\e914';
+  transform: rotate(-180deg);
+  transition: transform 0.3s ease-out;
+}
+.map-menu .panels {
+  padding: 0;
+  height: 440px;
+  overflow-y: auto;
+}
+.map-menu-dropdown, .map-menu-product-dropdown {
+  margin: 0 1rem;
+}
+.map-menu-dropdown .ccl-expandable__button {
+  margin: 0;
+  padding: 1rem;
+  background-color: #a0b1280f;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+.map-menu-dropdown .ccl-expandable__button {
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+}
+.map-menu-dropdown .ccl-expandable__button::after {
+  color: #a0b128;
+  margin-right: 0;
+}
+.map-menu-dropdown .map-menu-products-container {
+  background-color: white;
+}
+.map-menu-dropdown .ccl-expandable__button + .ccl-form {
+  padding: 0 1rem 0 1rem;
+}
+.map-menu-dropdown .ccl-form .ccl-form-group {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+}
+.map-menu-dropdown .map-menu-dataset {
+  margin-bottom: 0.5rem;
+}
+.map-menu-icon {
+  color: #a0b128;
+  margin-left: 0.5rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.map-menu-dropdown i:hover {
+  color: #7c8921;
+}
+.map-menu-product-dropdown {
+  margin-right: 0;
+}
+.map-menu-product-dropdown .map-product-checkbox {
+  background-color: white;
+}
+#active_panel .no-active-datasets:first-child {
+  display: none;
+}
+#active_panel .no-active-datasets:last-child {
+  display: block;
+  margin: 1rem;
+}
+.active-dataset {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding: 0 1rem 1rem 1rem;
+  border-bottom: solid 1px #a0b12833;
+}
+#active_panel .active-dataset:not(:first-of-type) {
+  padding: 1rem;
+}
+.active-dataset i.fa-long-arrow-alt-up {
+  visibility: hidden;
+}
+.active-dataset + .active-dataset i.fa-long-arrow-alt-up {
+  visibility: visible;
+}
+.active-dataset:last-of-type i.fa-long-arrow-alt-down {
+  visibility: hidden;
+}
+.active-dataset-options i {
+  margin: 0;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #a0b128;
+}
+.active-dataset i:hover {
+  color: #7c8921;
+}
+.active-dataset-options > span {
+  margin-left: 1rem;
+}
+.map-container {
+  position: relative;
+}
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  touch-action: auto;
+  font-size: 2rem;
+  color: #273b4b;
+}
+
+/* Download area */
+.map-download-area-container {
+  position: relative;
+}
+.map-download-block {
+  position: absolute;
+  width: 30%;
+  max-width: 500px;
+  min-width: 350px;
+  top: 0;
+  left: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+  background-color: white;
+  padding: 1.5rem;
+}
+.map-download-title {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.map-download-title span {
+  color: #a0b128;
+}
+.map-download-area, .map-download-resource {
+  margin-bottom: 1.5rem;
+}
+.map-download-header {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.map-download-area .ccl-form-legend + .ccl-form-group {
+  margin-top: 0.5rem;
+}
+.map-download-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.map-download-block .ccl-form-group:not(:first-of-type) {
+  margin-top: 0.5rem;
+}
+
+/*Use cases*/
+.use-cases-block:not(:last-of-type) {
+  margin-bottom: 3rem;
+}
+.use-cases-block h2 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.green-container {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #a0b1280f;
+  display: flex;
+  flex-direction: column;
+}
+.green-container .ccl-button {
+  margin: 0 auto;
+}
+.use-cases-products-block {
+  margin-bottom: 3rem;
+}
+.use-cases-products-title {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.use-cases-products-map {
+  height: 20rem;
+}
+.use-cases-products-list {
+  max-height: 20rem;
+  overflow-y: auto;
+}
+.use-cases-products .dropdown {
+  margin-bottom: 1rem;
+}
+.use-cases-products-list .dropdown .ccl-expandable__button {
+  background-color: white;
+  color: #a0b128;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  border-bottom: solid 2px #a0b128;
+}
+.use-cases-products-list .dropdown .use-cases-element-container {
+  background-color: white;
+  padding: 0;
+}
+.use-cases-element-container {
+  margin-left: 1rem;
+}
+.use-cases-element {
+  margin-bottom: 1rem;
+  border-bottom: solid 1px #a0b12833;
+}
+.use-cases-element:last-of-type {
+  margin-bottom: 0;
+  border: none;
+}
+.use-case-element-title {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.use-case-element-description {
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+.use-case-element-description span:not(:last-of-type) {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding-right: 0.5rem;
+  border-right: solid 1px #adb0b8;
+}
+.use-cases-products-container {
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+}
+.use-cases-map-container {
+  position: relative;
+  background-color: #ebebeb;
+  width: 100%;
+  height: 100%;
+}
+.usecase-form-product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.usecase-form-product-item {
+  background-color: #273b4b;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 200;
+  border-radius: 0.25rem;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  margin: 0.5rem 0.5rem 0 0;
+}
+.usecase-form-product-item .ccl-icon-close {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+/* Search */
+.search-results {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+.search-tag {
+  float: right;
+  color: white;
+  background-color: #273b4b;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+  font-weight: normal;
+}
+
+/* Forms */
+.user-form .ccl-fieldset {
+  margin-bottom: 2rem;
+}
+.user-form .ccl-form-label {
+  display: inline-block;
+  font-size: 1.125rem;
+}
+.user-form .ccl-form-legend {
+  font-weight: 700;
+  line-height: inherit;
+}
+@media (min-width: 768px) {
+  .user-form .ccl-text-input, .user-form .ccl-select-container .ccl-select-selected, .ccl-select-items, input[type=file] {
+    width: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .user-form .ccl-text-input, .user-form .ccl-select-container .ccl-select-selected, .ccl-select-items, input[type=file] {
+    width: 50%;
+  }
+}
+.label-required {
+  margin-left: 0.5rem;
+  color: crimson;
+  font-size: 1.25rem;
+  line-height: 1rem;
+  font-weight: bold;
+}
+.register-input-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+.register-input-group .ccl-form-group {
+  margin-top: 1rem;
+  width: 100%;
+  margin-right: 1rem;
+  display: flex;
+}
+@media (min-width: 576px) { 
+  .register-input-group .ccl-form-group {
+    width: calc(50% - 1rem);
+  }
+}
+@media (min-width: 1200px) {
+  .register-input-group .ccl-form-group {
+    width: calc(33% - 1rem);
+  }
+}
+.user-form .ccl-textarea {
+  resize: none;
+  height: 100%;
+  margin-top: .89rem;
+}
+.user-form + p {
+  margin-top: 1rem;
+}
+.form-tip {
+  display: inline-block;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.validation-image {
+  width: 33%;
+  height: 3rem;
+  max-width: 20rem;
+  margin-top: 1rem;
+  background-color: lightgray;
+}
+
+/* Legal */
+.legal-block:not(:last-of-type) {
+  margin-bottom: 3rem;
+}
+.legal-block h2 {
+  font-size: 1.25rem;
+}
+@media (min-width: 992px) {
+  .legal-block {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
+
+/* News & event detail */
+.news-detail img, .event-detail img {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+.news-detail p:not(:last-of-type), .event-detail p:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+/* About */
+.about-block:not(:last-of-type) {
+  margin-bottom: 3rem;
+}
+.about-block h2 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Cart */
+.table-th-warning {
+  padding-right: 0.75rem;
+  visibility: hidden;
+}
+.table-td-warning {
+  visibility: hidden;
+}
+.table-td-warning.hidden-warning i {
+  visibility: hidden;
+}
+.table-td-warning i {
+  visibility: visible;
+  color: #a0b128;
+  cursor: pointer;
+}
+.table-td-warning i:hover {
+  color: #7c8921;
+}
+.table-td-format .ccl-select-container .ccl-select-selected {
+  padding-right: 2.5rem;
+}
