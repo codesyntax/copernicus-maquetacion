@@ -32,7 +32,7 @@ require([
   view.ui.add(zoom, {
     position: "top-right"
   });
-  
+
   // Basemap gallery
   var basemap_container = document.createElement('div');
   basemap_container.className = "basemap-gallery-container";
@@ -142,11 +142,11 @@ require([
 function loadTestProducts () {
   $("#products_panel").empty().append(
     '<div class="map-menu-dropdown">'+
-      '<div class="ccl-dropdown__link ccl-expandable__button" aria-expanded="false">Product component</div>'+
+      '<div class="ccl-expandable__button" aria-expanded="false">Land Cover and Land Use Mapping</div>'+
       '<div class="">'+
         '<div class="map-menu-product-dropdown">'+
           '<fieldset class="ccl-fieldset">'+
-            '<div class="ccl-dropdown__link  ccl-expandable__button" aria-expanded="false">'+
+            '<div class="ccl-expandable__button" aria-expanded="false">'+
               '<div class="ccl-form map-product-checkbox">'+
                 '<div class="ccl-form-group">'+
                   '<input type="checkbox" id="map_product_1" name="" value="" class="ccl-checkbox ccl-required ccl-form-check-input">'+
@@ -174,7 +174,7 @@ function loadTestProducts () {
         '</div>'+
         '<div class="map-menu-product-dropdown">'+
           '<fieldset class="ccl-fieldset">'+
-            '<div class="ccl-dropdown__link  ccl-expandable__button" aria-expanded="false">'+
+            '<div class="ccl-expandable__button" aria-expanded="false">'+
               '<div class="ccl-form map-product-checkbox">'+
                 '<div class="ccl-form-group">'+
                   '<input type="checkbox" id="map_product_2" name="" value="" class="ccl-checkbox ccl-required ccl-form-check-input">'+
@@ -201,6 +201,14 @@ function loadTestProducts () {
           '</fieldset>'+
         '</div>'+
       '</div>'+
+      // '<div class="ccl-expandable__button" aria-expanded="false">Hot-spot Monitoring</div>'+
+      // '<div class="">Lorem ipsum...</div>'+
+      // '<div class="ccl-expandable__button" aria-expanded="false">Biophysical Parameters</div>'+
+      // '<div class="">Lorem ipsum...</div>'+
+      // '<div class="ccl-expandable__button" aria-expanded="false">Imagery, In Situ and Reference Data</div>'+
+      // '<div class="">Lorem ipsum...</div>'+
+      // '<div class="ccl-expandable__button" aria-expanded="false">European Ground Motion Service</div>'+
+      // '<div class="">Lorem ipsum...</div>'+
     '</div>')
 };
 
@@ -230,6 +238,9 @@ $(document).on ("change",'.map-menu-dataset input', function(){
   if (product.prop("checked")) {
     product.prop("checked",false);
   }
+  if ($(this).parents(".map-menu-products-container").find("input:checked").length == $(this).parents(".map-menu-products-container").find("input").length) {
+    product.prop("checked",true);
+  }
   if (this.checked) {
     $("#active_panel").append('<div class="active-dataset" id="active_'+ dataset_id +'"></div>');
     $(this).parent().clone().appendTo("#active_"+dataset_id);
@@ -252,6 +263,10 @@ $(document).on("change",".map-product-checkbox input", function(){
   }
   else {
     datasets.prop("checked",false);
+    var datasets_id = $(this).parents(".map-menu-product-dropdown").find(".map-menu-dataset input");
+    datasets_id.each(function( i, element ) {
+      $("#active_"+element.id).remove();
+    });
   }
 });
 

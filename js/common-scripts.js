@@ -2,11 +2,28 @@ $(document).ready(function(){
   // Open login modal
   $(document).on('click','.header-login-link, .login-block-button', function() {
     $("#login_modal").fadeIn();
+    document.body.style.overflow = "hidden";
   });
+
+  // Open language modal
+  $(".ccl-header-lang").click(function(){
+    $("#language_modal").fadeIn();
+    document.body.style.overflow = "hidden";
+  });
+
+  $(document).on('click','.language-item:not(.language-item-selected)', function() {
+    document.querySelector(".header-lang-code").innerHTML = this.firstElementChild.getAttribute("lang-code");
+    document.querySelector(".header-lang-text span").innerHTML = this.firstElementChild.textContent;
+    $(this).parents(".modal").fadeOut();
+    document.body.removeAttribute("style");
+    document.querySelector(".language-item-selected").classList.toggle("language-item-selected");
+    this.classList.toggle("language-item-selected");
+  })
 
   // Close modal
   $(".modal-close").click(function(){
-    $(this).parents(".modal").fadeOut()
+    $(this).parents(".modal").fadeOut();
+    document.body.removeAttribute("style");
   });
 
   // Add profile options

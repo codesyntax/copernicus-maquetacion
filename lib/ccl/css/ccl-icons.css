@@ -8,7 +8,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 [class^="ccl-icon-"], [class*=" ccl-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'ccl-icons' !important;
@@ -23,7 +22,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .ccl-icon-language:before {
   content: "\e91b";
 }
