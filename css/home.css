@@ -240,11 +240,11 @@
   color: #fff;
 }
 .tab-container .tab-selected {
-  background: #fffffff6;
+  background: #ffffff;
   color: #273b4b;
 }
 .tab-container .panels {
-  background: #fffffff6;
+  background: #ffffff;
   width: 100%;
   padding: 2rem;
 }
