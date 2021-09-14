@@ -10,3 +10,15 @@ $(document).on("click",".tab:not(.tab-selected)", function() {
     return attr == "true" ? false : true;
   });
 });
+
+$(document).ready(function() {
+  $('.home-carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 1500,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 3000,
+  });
+});
