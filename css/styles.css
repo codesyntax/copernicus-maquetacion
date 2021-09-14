@@ -704,9 +704,35 @@ main .ccl-container .cont-w-75 {
 }
 
 /* News & event detail */
+.news-detail-date, .event-detail-date {
+  color: #adb0b8;
+  margin-bottom: 1.5rem;
+}
+.news-detail-image, .event-detail-image {
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .news-detail-image, .event-detail-image {
+    max-width: 50%;
+  }
+}
 .news-detail img, .event-detail img {
-  width: 50%;
-  margin-bottom: 1rem;
+  max-width: 100%;
+  height: auto;
+}
+.news-detail-image figcaption, .event-detail-image figcaption {
+  font-style: italic;
+  color: #273B4B;
+}
+.news-detail i, .event-detail i {
+  margin-right: 0.5rem;
+  width: 1rem
+}
+.news-detail-when, .news-detail-where, .event-detail-when, .event-detail-where {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 .news-detail p:not(:last-of-type), .event-detail p:not(:last-of-type) {
   margin-bottom: 1rem;
