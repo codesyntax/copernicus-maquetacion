@@ -88,43 +88,55 @@
     <main>
       <div class="ccl-container">
         <section class="page-section">
-            <nav class="ccl-breadcrumb" aria-label="breadcrumb">
-              <span class="ccl-u-sr-only">You are here:</span>
-              <ol class="ccl-breadcrumb__segments-wrapper">
-                <li class="ccl-breadcrumb__segment ccl-breadcrumb__segment--first">
-                  <a class="ccl-link ccl-link--inverted ccl-link--standalone ccl-breadcrumb__link" href="../">Home</a>
-                </li>
-                <li class="ccl-breadcrumb__segment">
-                  <a class="ccl-link ccl-link--inverted ccl-link--standalone ccl-breadcrumb__link" href="../faq/faq-general.html">FAQs</a>
-                </li>
-                <li class="ccl-breadcrumb__segment ccl-breadcrumb__segment--last">
-                  <span>CORINE Land Cover (CLC)</span>
-                </li>
-              </ol>
-            </nav>
-            <h1 class="page-title">CORINE Land Cover (CLC)</h1>
-            <div class="page-description">
-              <p>
-                In this section you will find some of the questions asked by portal users and answers to them. If you can't find an answer to your question here, please <a href="../service-desk.html">contact us</a>.
-              </p>
-            </div>
-            <hr>
-          </section>
+          <nav class="ccl-breadcrumb" aria-label="breadcrumb">
+            <span class="ccl-u-sr-only">You are here:</span>
+            <ol class="ccl-breadcrumb__segments-wrapper">
+              <li class="ccl-breadcrumb__segment ccl-breadcrumb__segment--first">
+                <a class="ccl-link ccl-link--inverted ccl-link--standalone ccl-breadcrumb__link" href="../">Home</a>
+              </li>
+              <li class="ccl-breadcrumb__segment">
+                <a class="ccl-link ccl-link--inverted ccl-link--standalone ccl-breadcrumb__link" href="../faq/faq-general.html">FAQs</a>
+              </li>
+              <li class="ccl-breadcrumb__segment ccl-breadcrumb__segment--last">
+                <span>Intellectual property rights</span>
+              </li>
+            </ol>
+          </nav>
+          <h1 class="page-title">Intellectual property rights</h1>
+          <div class="page-description">
+            <p>
+              In this section you will find some of the questions asked by portal users and answers to them. If you can't find an answer to your question here, please <a href="../service-desk.html">contact us</a>.
+            </p>
+          </div>
+          <hr>
+        </section>
       </div>
       <div class="ccl-container ccl-container-flex">
         <div class="left-content cont-w-25">
           <nav class="left-menu">
             <div class="card">
-              <a href="../faq/faq-general.html" class="collapsed">General data access and legal questions</a>
+              <a href="../faq/faq-general.html" class="collapsed">General questions</a>
+            </div>
+            <div class="card">
+              <a href="../faq/faq-navigation.html" class="collapsed">Navigation</a>
             </div>
             <div class="card active">
-              <a href="../faq/faq-clc.html" class="collapsed">Corine Land Cover</a>
+              <a href="../faq/faq-rights.html" class="collapsed">Intellectual property rights</a>
             </div>
             <div class="card">
-              <a href="../faq/faq-hrl.html" class="collapsed">High Resolution Layers</a>
+              <a href="../faq/faq-registration.html" class="collapsed">Registration</a>
             </div>
             <div class="card">
-              <a href="../faq/faq-urban-atlas.html" class="collapsed">Urban Atlas</a>
+              <a href="../faq/faq-map-viewer.html" class="collapsed">Map viewer</a>
+            </div>
+            <div class="card">
+              <a href="../faq/faq-download.html" class="collapsed">Download</a>
+            </div>
+            <div class="card">
+              <a href="../faq/faq-use-cases.html" class="collapsed">Use cases</a>
+            </div>
+            <div class="card">
+              <a href="../faq/faq-glossary.html" class="collapsed">Glossary</a>
             </div>
           </nav>
         </div>
@@ -135,7 +147,7 @@
                 <div class="faq-dropdown-question">
                   <b class="faq-dropdown-letter">Q</b>
                   <div class="faq-dropdown-title">
-                    <h2>I am interested in analysing environmental changes between 2000 and 2018 based on CORINE Land Cover time series. Should I use CLC-Change or CLC status layers? </h2>
+                    <h2> Lorem ipsum dolor sit amet?</h2>
                   </div>
                 </div>
               </div>
@@ -144,119 +156,7 @@
                   <b class="faq-dropdown-letter">A</b>
                   <div class="faq-dropdown-text">
                     <p>
-                      The CLC-Change layer is proposed to be used in case of analysing of changes, because:
-                    </p>
-                    <ul class="ul-list">
-                      <li>
-                        The CLC-Change layer is more detailed (resolution / MMU = 5 ha) compared to the resolution of the status layers (MMU = 25 ha).
-                      </li>
-                      <ul class="ul-list">
-                        <li>The methodology of update includes two directly derived layers: the revised version of the previous CLC (revised-CLC_old) and the CLC changes between year(old) and year(new) (CLC-Change(old-new)). The updated CLC (CLC_new) is derived in GIS according to the equation below. This process includes generalisation of areas below the 25 ha MMU.
-                        </li>
-                        <p>
-                          CLC_new = revised-CLC_old + CLC-Change(old-new)
-                        </p>
-                      </ul>
-                    </ul>
-                    <p>
-                      The typical reasons for need of revising the CLC status layer are as follows:
-                    </p>
-                    <ul class="ul-list">
-                      <li>
-                        Availability of a new satellite image provides additional information to correctly recognise a feature. E.g. a young forest was not recognised in CLC2012, but in the 2018 update it became evident for the photointerpreter (because of forest growth and/or better resolution images). To avoid mapping false changes, the CLC2012 database had to be corrected (revised).
-                      </li>
-                      <li>
-                        Improved availability and better quality of in-situ data. Just to mention two examples: (1) using orthophotos was restricted in some countries of Europe around 2000; (2) Google Earth data are gradually improving in coverage and quality.
-                      </li>
-                      <li>
-                        Improved skills on behalf of photointerpreters, i.e. better understanding and harmonised application of CLC nomenclature.
-                      </li>
-                      <li>
-                        Changes in methodology of updating. Photointerpretation replaced by semi-automatic, bottom-up methodology in some countries e.g. Germany, Ireland, Spain, Portugal.
-                      </li>
-                      <li>
-                        Sometimes National Team discover and correct some systematic mistakes in their CLC during the period between two CLC inventories. A recent example is that before mapping CLC 2018 Sweden had improved the separation of coniferous forests and peatbogs in CLC 2012 (creating a revised CLC 2012).
-                      </li>
-                    </ul>
-                    <p>
-                      For the sake of simplicity let’s consider the comparison (intersect) of two consecutive status layers (e.g. CLC 2012 and CLC 2018; MMU = 25 ha). It is highly probable that some non-real changes will be derived compared to CLC-Change (2012-2018). The volume of non-real changes depends on two factors:
-                    </p>
-                    <ul class="ul-list">
-                      <li>                          
-                        The amount of revision implemented on CLC 2012. These can be sorted out by comparing CLC 2018 and revised-CLC 2012.
-                      </li>
-                      <li>
-                        The number of CLC changes belonging to the 5 – 25 ha size range. No such problem would exist if all CLC changes were above 25 ha (i.e. MMU for status and change layer would be the same). Using two status layers with 25 ha resolution, CLC-Change layer with 5 ha resolution cannot be retrieved.
-                      </li>
-                    </ul>
-                    <p>
-                      The difference between CLC 2018 and CLC 2000 will include real changes and non-real changes:
-                    </p>
-                    <ul class="ul-list">
-                      <li>                          
-                        The real changes actually took place in the environment between 2000 and 2018.
-                      </li>
-                      <li>
-                        The non-real changes are not actual changes in the environment, but differences between datasets coming from consecutive revisions carried out on CLC 2000, CLC 2006 and CLC 2012 databases during the implementation of CLC 2006, CLC 2012 and CLC 2018 projects, respectively.
-                      </li>
-                    </ul>
-                    <p>
-                      The difference of CLC 2018 and CLC 2000 would provide an approximation of real changes only if no revisions in any of the three involved CLC status layers (CLC 2000, CLC 2006, CLC 2012) had taken place. Even if this was the case, exact change values cannot be obtained in practice because of the different MMUs of the status and change layers.
-                    </p>
-                    <p>
-                      Thus, instead of comparing CLC 2000 and CLC 2018, it is proposed to derive gains and losses between 2000 and 2018 by summing up (adding together) the three CLC-Change layers spanning the period of investigation.
-                    </p>
-                    <p>
-                      An earlier study showed that the inconsistency between two consecutive CLC-Change layers was modest (covering about 1% of all changes).
-                    </p>
-                    <p>
-                      <a href="https://land.copernicus.eu/user-corner/technical-library/Change_harmonization_report_final.pdf" target="_blank" rel="noreferrer">https://land.copernicus.eu/user-corner/technical-library/Change_harmonization_report_final.pdf</a>
-                    </p>
-                    <p>
-                      If status layers from the past are needed, these could be derived backward from deducting CLC-Change layers consecutively from the latest (best available) status layer. These synthetized CLCs are called “accounting layers”.  The accounting layers are available at:
-                    </p>
-                    <p>
-                      <a href="https://www.eea.europa.eu/data-and-maps/data/corine-land-cover-accounting-layers" target="_blank" rel="noreferrer">https://www.eea.europa.eu/data-and-maps/data/corine-land-cover-accounting-layers</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="faq-dropdown">
-              <div class="ccl-expandable__button" aria-expanded="false">
-                <div class="faq-dropdown-question">
-                  <b class="faq-dropdown-letter">Q</b>
-                  <div class="faq-dropdown-title">
-                    <h2>...</h2>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="faq-dropdown-answer">
-                  <b class="faq-dropdown-letter">A</b>
-                  <div class="faq-dropdown-text">
-                    <p>
-                      ...
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="faq-dropdown">
-              <div class="ccl-expandable__button" aria-expanded="false">
-                <div class="faq-dropdown-question">
-                  <b class="faq-dropdown-letter">Q</b>
-                  <div class="faq-dropdown-title">
-                    <h2>...</h2>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="faq-dropdown-answer">
-                  <b class="faq-dropdown-letter">A</b>
-                  <div class="faq-dropdown-text">
-                    <p>
-                      ...
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     </p>
                   </div>
                 </div>
