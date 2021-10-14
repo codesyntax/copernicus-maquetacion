@@ -227,6 +227,9 @@
 .left-menu .card.active {
   background-color: #a0b128;
 }
+.left-menu .subcard {
+  margin-left: 1rem;
+}
 .left-menu a {
   text-decoration: none;
   vertical-align: middle;

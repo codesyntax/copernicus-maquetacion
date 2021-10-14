@@ -77,7 +77,7 @@
           </div>
           <nav class="ccl-main-menu">
             <ul class="ccl-header-main-menu">
-              <li><a href="./product-portfolio/product-creation.html">Product portfolio</a></li>
+              <li><a href="./product-portfolio/product-useful.html">Product portfolio</a></li>
               <li><a href="./dataset-catalogue.html">Dataset catalogue</a></li>
               <li><a href="./map-viewer.html">Map viewer</a></li>
               <li><a href="./clms-made-easy.html">CLMS made easy</a></li>
@@ -184,6 +184,31 @@
                     <span>Organisation</span>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="use-case-detail" style="display: none;">
+            <div class="use-case-detail-close">
+              <span class="ccl-icon-close" aria-label="Close" tabindex="0" role="button"></span>
+            </div>
+            <div class="use-case-detail-image">
+              <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
+            </div>
+            <div class="use-case-detail-content">
+              <div class="use-case-detail-product">Product 1</div>
+              <div class="use-case-detail-title">Use case 1</div>
+              <div class="use-case-detail-info">
+                <span>Topic</span>
+                <span>Year</span>
+                <span>Organisation</span>
+              </div>
+              <div class="use-case-detail-description">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
               </div>
             </div>
           </div>
@@ -398,5 +423,16 @@
         </div>
       </div>
     </div>
+    <script>
+      document.querySelector(".use-cases-map-container").addEventListener("click", () => {
+        document.querySelector(".use-cases-products-list").style.display = "none";
+        document.querySelector(".use-case-detail").style.display = "block";
+      })
+
+      document.querySelector(".use-case-detail-close").addEventListener("click", () => {
+        document.querySelector(".use-cases-products-list").style.display = "block";
+        document.querySelector(".use-case-detail").style.display = "none";
+      })
+    </script>
   </body>
 </html>

@@ -132,7 +132,7 @@
 }
 @media (max-width: 480px) { 
   .card-news {
-    flex-wrap: wrap;
+    flex-wrap:wrap;
   }
   .card-news .card-news-image {
     width: 100%;
@@ -184,7 +184,7 @@
 }
 @media (max-width: 480px) { 
   .card-event {
-    flex-wrap: wrap;
+    flex-wrap:wrap;
   }
   .card-event .card-event-image {
     width: 100%;
