@@ -375,3 +375,36 @@
 .ccl-list-items.ccl-list-items-row .ccl-list-item {
   margin: 1rem;
 }
+
+/* Banner info */
+.ccl-banner-info {
+  display: none;
+  position: absolute;
+  bottom: 2rem;
+  right: 0;
+  z-index: 1;
+  padding: 1.5rem;
+  width: 100%;
+  background: #ffffffd9;
+}
+
+@media (min-width: 768px) {
+  .ccl-banner-info {
+    width: 40%;
+  }
+}
+.ccl-banner-info .ccl-banner-info-title{
+  font-weight: bold;
+  font-size: 1rem !important;
+  margin-bottom: 1rem;
+}
+.ccl-banner-info .ccl-banner-info-content p {
+  font-size: 1rem;
+  line-height: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+.ccl-banner-info-link {
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+}

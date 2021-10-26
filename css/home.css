@@ -42,6 +42,7 @@
 }
 .ccl-banner-top-bar .ccl-container .ccl-banner-top-bar-right {
   margin-left: 0.5rem;
+  cursor: pointer;
 }
 .ccl-banner-top-bar .ccl-container {
   display: flex;
@@ -70,6 +71,7 @@
 }
 .home-carousel .ccl-icon-map-dot {
   margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 /* Products band */

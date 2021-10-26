@@ -21,4 +21,29 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 3000,
   });
+
+  document.querySelectorAll('.ccl-banner-top-bar-right').forEach(item => {
+    item.addEventListener('click', e => {
+      if (!document.querySelector('.ccl-banner-info')) {
+        let string = '<div class="ccl-banner-info">'+
+        '<div class="ccl-banner-info-title">Lorem ipsum dui a is, lorem ipsum dui a turpis finibus</div>'+
+          '<div class="ccl-banner-info-content">'+
+            '<p>Location: Lorem ipsum dui a is</p>'+
+            '<p>Credit: Lorem ipsum dui a turpis finibus</p>'+
+          '</div>'+
+          '<a class="ccl-banner-info-link" href="#">More info</a>'+
+        '</div>';
+        document.querySelector('.slick-dots').insertAdjacentHTML('beforebegin', string);
+        document.querySelector('.ccl-banner-info').style.display = 'block';
+      }
+      else {
+        if (document.querySelector('.ccl-banner-info').style.display == 'block') {
+          document.querySelector('.ccl-banner-info').style.display = 'none';
+        }
+        else {
+          document.querySelector('.ccl-banner-info').style.display = 'block';
+        }
+      }
+    })
+  })
 });
