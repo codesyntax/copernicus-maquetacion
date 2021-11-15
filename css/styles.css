@@ -391,18 +391,6 @@ main .ccl-container .cont-w-75 {
 .left-menu-detail .ccl-button {
   width: 100%;
 }
-.product-detail-text {
-  margin-bottom: 3rem;
-}
-.product-detail-datasets {
-  margin-bottom: 2rem;
-}
-.product-detail-datasets h2 {
-  font-size: 1.125rem;
-}
-.product-detail-documents h2 {
-  font-size: 1.125rem;
-}
 
 /* Dataset detail */
 .download-dataset-metadata {

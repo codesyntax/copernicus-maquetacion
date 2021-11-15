@@ -59,6 +59,9 @@
 }
 
 /* Dropdown */
+.dropdown {
+  margin-bottom: 0.5rem;
+}
 .dropdown .ccl-expandable__button {
   color: #212529;
   display: -webkit-flex;
@@ -111,6 +114,7 @@
 .dropdown .ccl-expandable__button h2 {
   margin: 0;
   padding: 0;
+  font-size: 1.125rem;
 }
 .dropdown .ccl-expandable__button:not(:first-of-type) {
   margin-top: 0.25rem;
@@ -121,6 +125,23 @@
 }
 .dropdown .ccl-expandable__button:hover::after {
   color: #7c8921;
+}
+.dropdown-content p {
+  margin: 1rem 0;
+}
+.dropdown-appearance {
+  color: #212529;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
+  background-color: #a0b1280f;
+}
+.dropdown-appearance h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.125rem;
 }
 
 /* Filters */
