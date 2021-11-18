@@ -108,266 +108,205 @@
               <span class="ccl-icon-zoom"></span>
             </button>
           </form>
-          <div class="search-results">
-            <span>Displaying</span> <span class="search-results-current">1 - 10</span> of <span class="search-results-total">300</span>
+          <div class="search-filters">
+            <div class="search-results">
+              <span>Displaying</span> <span class="search-results-current">1 - 10</span> of <span class="search-results-total">300</span>
+            </div>
+            <div class="filters-container">
+              <div class="filters-element filters-element-order">
+                <div class="filters-title">
+                  <span class="filters-title-light">Sort by</span>
+                </div>
+                <select name="" id="">
+                  <option value="az">Title A-Z</option>
+                  <option value="za">Title Z-A</option>
+                  <option value="new">Newest</option>
+                  <option value="old">Oldest</option>
+                </select>
+              </div>
+              <div class="filters-element filters-element-filter">
+                <div class="filters-title">
+                  <i class="fas fa-sliders-h"></i>
+                  <span class="filters-title-bold">Filters</span>
+                </div>
+              </div>
+            </div>
           </div>
           <hr>
         </section>
       </div>
-      <div class="ccl-container ccl-container-flex">
-        <div class="right-content cont-w-25 cont-o-1">
-          <nav class="dropdown-filters">
-            <fieldset class="ccl-fieldset">
-              <div class="ccl-expandable__button" aria-expanded="false"><legend class="ccl-form-legend">Sort by</legend></div>
-              <div class="ccl-form">
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="sort_by_name" name="field_gdpr[value]" value="name" class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
-                  <label class="ccl-form-check-label" for="sort_by_name">Name</label>
-                </div>
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="sort_by_date" name="field_gdpr[value]" value="date" class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
-                  <label class="ccl-form-check-label" for="sort_by_date">Date</label>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="ccl-fieldset">
-              <div  class=" ccl-expandable__button" aria-expanded="false"><legend class="ccl-form-legend">Search only in</legend></div>
-              <div class="ccl-form">
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="search_filter_products" name="" value="products" class="ccl-checkbox ccl-required ccl-form-check-input">
-                    <label class="ccl-form-check-label" for="search_filter_products">Products</label>
-                </div>
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="search_filter_datasets" name="" value="datasets" class="ccl-checkbox ccl-required ccl-form-check-input">
-                    <label class="ccl-form-check-label" for="search_filter_datasets">Datasets</label>
-                </div>
-                <div class=" ccl-expandable__button" aria-expanded="false">
-                  <div class="ccl-form">
-                    <div class="ccl-form-group">
-                      <input type="checkbox" id="search_filter_documantation" name="" value="documentation" class="ccl-checkbox ccl-required ccl-form-check-input">
-                      <label class="ccl-form-check-label" for="search_filter_documantation">Product documentation</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="ccl-form">
-                  <div class="ccl-form-group">
-                    <input type="checkbox" id="search_filter_documentation_manuals" name="" value="documentation_manuals" class="ccl-checkbox ccl-required ccl-form-check-input">
-                      <label class="ccl-form-check-label" for="search_filter_documentation_manuals">User manuals</label>
-                  </div>
-                  <div class="ccl-form-group">
-                    <input type="checkbox" id="search_filter_documentation_methodology" name="" value="documentation_methodology" class="ccl-checkbox ccl-required ccl-form-check-input">
-                      <label class="ccl-form-check-label" for="search_filter_documentation_methodology">Methodology description</label>
-                  </div>
-                  <div class="ccl-form-group">
-                    <input type="checkbox" id="search_filter_documentation_quality" name="" value="documentation_methodology" class="ccl-checkbox ccl-required ccl-form-check-input">
-                      <label class="ccl-form-check-label" for="search_filter_documentation_quality">Quality control documents</label>
-                  </div>
-                  <div class="ccl-form-group">
-                    <input type="checkbox" id="search_filter_documentation_" name="" value="documentation_methodology" class="ccl-checkbox ccl-required ccl-form-check-input">
-                      <label class="ccl-form-check-label" for="search_filter_documentation_">...</label>
-                  </div>
-                </div>
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="search_filter_madeeasy" name="" value="madeeasy" class="ccl-checkbox ccl-required ccl-form-check-input">
-                    <label class="ccl-form-check-label" for="search_filter_madeeasy">CLMS made easy</label>
-                </div>
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="search_filter_usecases" name="" value="usecases" class="ccl-checkbox ccl-required ccl-form-check-input">
-                    <label class="ccl-form-check-label" for="search_filter_usecases">Use cases</label>
-                </div>
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="search_filter_news" name="" value="news" class="ccl-checkbox ccl-required ccl-form-check-input">
-                    <label class="ccl-form-check-label" for="search_filter_news">News</label>
-                </div>
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="search_filter_events" name="" value="events" class="ccl-checkbox ccl-required ccl-form-check-input">
-                    <label class="ccl-form-check-label" for="search_filter_events">Events</label>
-                </div>
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="search_filter_guides" name="" value="guides" class="ccl-checkbox ccl-required ccl-form-check-input">
-                    <label class="ccl-form-check-label" for="search_filter_guides">How-to guides</label>
-                </div>
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="search_filter_faqs" name="" value="faqs" class="ccl-checkbox ccl-required ccl-form-check-input">
-                    <label class="ccl-form-check-label" for="search_filter_faqs">FAQs</label>
-                </div>
-              </div>
-            </fieldset>
-          </nav>
-        </div>
-        <div class="left-content cont-w-75">
-          <div class="card-container">
-            <div class="card-line">
-              <div class="card-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
-              </div>
-              <div class="card-text">
-                <div class="search-tag">Dataset</div>
-                <div class="card-title">
-                  <a href="./dataset-catalogue/dataset-info.html">Dataset title</a>
-                </div>
-                <div class="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
-                </div>
-              </div>
+      <div class="ccl-container">
+        <div class="card-container">
+          <div class="card-line">
+            <div class="card-image">
+              <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
             </div>
-            <div class="card-line">
-              <div class="card-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
+            <div class="card-text">
+              <div class="search-tag">Dataset</div>
+              <div class="card-title">
+                <a href="./dataset-catalogue/dataset-info.html">Dataset title</a>
               </div>
-              <div class="card-text">
-                <div class="search-tag">Product</div>
-                <div class="card-title">
-                  <a href="./product-portfolio/product-list/product-detail.html">Product title</a>
-                </div>
-                <div class="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
-                </div>
-              </div>
-            </div>
-            <div class="card-line">
-              <div class="card-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
-              </div>
-              <div class="card-text">
-                <div class="search-tag">News</div>
-                <div class="card-title">
-                  <a href="./news/news-detail.html">News title</a>
-                </div>
-                <div class="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
-                </div>
-              </div>
-            </div>
-            <div class="card-line">
-              <div class="card-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
-              </div>
-              <div class="card-text">
-                <div class="search-tag">Event</div>
-                <div class="card-title">
-                  <a href="./events/event-detail.html">Event title</a>
-                </div>
-                <div class="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
-                </div>
-              </div>
-            </div>
-            <div class="card-line">
-              <div class="card-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
-              </div>
-              <div class="card-text">
-                <div class="search-tag">Dataset</div>
-                <div class="card-title">
-                  <a href="./dataset-catalogue/dataset-info.html">Dataset title</a>
-                </div>
-                <div class="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
-                </div>
-              </div>
-            </div>
-            <div class="card-line">
-              <div class="card-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
-              </div>
-              <div class="card-text">
-                <div class="search-tag">Product</div>
-                <div class="card-title">
-                  <a href="./product-portfolio/product-list/product-detail.html">Product title</a>
-                </div>
-                <div class="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
-                </div>
-              </div>
-            </div>
-            <div class="card-line">
-              <div class="card-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
-              </div>
-              <div class="card-text">
-                <div class="search-tag">News</div>
-                <div class="card-title">
-                  <a href="./news/news-detail.html">News title</a>
-                </div>
-                <div class="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
-                </div>
-              </div>
-            </div>
-            <div class="card-line">
-              <div class="card-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
-              </div>
-              <div class="card-text">
-                <div class="search-tag">Event</div>
-                <div class="card-title">
-                  <a href="./events/event-detail.html">Event title</a>
-                </div>
-                <div class="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
-                </div>
-              </div>
-            </div>
-            <div class="card-line">
-              <div class="card-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
-              </div>
-              <div class="card-text">
-                <div class="search-tag">Dataset</div>
-                <div class="card-title">
-                  <a href="./dataset-catalogue/dataset-info.html">Dataset title</a>
-                </div>
-                <div class="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
-                </div>
-              </div>
-            </div>
-            <div class="card-line">
-              <div class="card-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
-              </div>
-              <div class="card-text">
-                <div class="search-tag">Product</div>
-                <div class="card-title">
-                  <a href="./product-portfolio/product-list/product-detail.html">Product title</a>
-                </div>
-                <div class="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
-                </div>
-              </div>
-            </div>
-            <div class="card-line">
-              <div class="card-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
-              </div>
-              <div class="card-text">
-                <div class="search-tag">News</div>
-                <div class="card-title">
-                  <a href="./news/news-detail.html">News title</a>
-                </div>
-                <div class="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
-                </div>
-              </div>
-            </div>
-            <div class="card-line">
-              <div class="card-image">
-                <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
-              </div>
-              <div class="card-text">
-                <div class="search-tag">Event</div>
-                <div class="card-title">
-                  <a href="./events/event-detail.html">Event title</a>
-                </div>
-                <div class="card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
-                </div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
               </div>
             </div>
           </div>
-          <div class="pagination-container"></div>
+          <div class="card-line">
+            <div class="card-image">
+              <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
+            </div>
+            <div class="card-text">
+              <div class="search-tag">Product</div>
+              <div class="card-title">
+                <a href="./product-portfolio/product-list/product-detail.html">Product title</a>
+              </div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
+              </div>
+            </div>
+          </div>
+          <div class="card-line">
+            <div class="card-image">
+              <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
+            </div>
+            <div class="card-text">
+              <div class="search-tag">News</div>
+              <div class="card-title">
+                <a href="./news/news-detail.html">News title</a>
+              </div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
+              </div>
+            </div>
+          </div>
+          <div class="card-line">
+            <div class="card-image">
+              <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
+            </div>
+            <div class="card-text">
+              <div class="search-tag">Event</div>
+              <div class="card-title">
+                <a href="./events/event-detail.html">Event title</a>
+              </div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
+              </div>
+            </div>
+          </div>
+          <div class="card-line">
+            <div class="card-image">
+              <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
+            </div>
+            <div class="card-text">
+              <div class="search-tag">Dataset</div>
+              <div class="card-title">
+                <a href="./dataset-catalogue/dataset-info.html">Dataset title</a>
+              </div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
+              </div>
+            </div>
+          </div>
+          <div class="card-line">
+            <div class="card-image">
+              <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
+            </div>
+            <div class="card-text">
+              <div class="search-tag">Product</div>
+              <div class="card-title">
+                <a href="./product-portfolio/product-list/product-detail.html">Product title</a>
+              </div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
+              </div>
+            </div>
+          </div>
+          <div class="card-line">
+            <div class="card-image">
+              <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
+            </div>
+            <div class="card-text">
+              <div class="search-tag">News</div>
+              <div class="card-title">
+                <a href="./news/news-detail.html">News title</a>
+              </div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
+              </div>
+            </div>
+          </div>
+          <div class="card-line">
+            <div class="card-image">
+              <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
+            </div>
+            <div class="card-text">
+              <div class="search-tag">Event</div>
+              <div class="card-title">
+                <a href="./events/event-detail.html">Event title</a>
+              </div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
+              </div>
+            </div>
+          </div>
+          <div class="card-line">
+            <div class="card-image">
+              <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
+            </div>
+            <div class="card-text">
+              <div class="search-tag">Dataset</div>
+              <div class="card-title">
+                <a href="./dataset-catalogue/dataset-info.html">Dataset title</a>
+              </div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
+              </div>
+            </div>
+          </div>
+          <div class="card-line">
+            <div class="card-image">
+              <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
+            </div>
+            <div class="card-text">
+              <div class="search-tag">Product</div>
+              <div class="card-title">
+                <a href="./product-portfolio/product-list/product-detail.html">Product title</a>
+              </div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
+              </div>
+            </div>
+          </div>
+          <div class="card-line">
+            <div class="card-image">
+              <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
+            </div>
+            <div class="card-text">
+              <div class="search-tag">News</div>
+              <div class="card-title">
+                <a href="./news/news-detail.html">News title</a>
+              </div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
+              </div>
+            </div>
+          </div>
+          <div class="card-line">
+            <div class="card-image">
+              <img src="https://eu-copernicus.github.io/copernicus-component-library/assets/images/image_placeholder.jpg" alt="Placeholder image" style="opacity: 0.5;">
+            </div>
+            <div class="card-text">
+              <div class="search-tag">Event</div>
+              <div class="card-title">
+                <a href="./events/event-detail.html">Event title</a>
+              </div>
+              <div class="card-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor.
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="pagination-container"></div>
     </div>
     </main>
     <footer class="ccl-footer">
@@ -509,6 +448,105 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-filters" id="filters_modal">
+      <div class="modal-filters-background">
+        <div class="modal-filters-container">
+          <div class="modal-filters-header">
+            <div class="modal-filters-title">
+              <h3 class="modal-title">Filters</h3>
+            </div>
+            <div class="modal-filters-right">
+              <div class="modal-filters-clear">Clear filters</div>
+              <div class="modal-close modal-filters-close">
+                <span class="ccl-icon-close" aria-label="Close"></span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-filters-body">
+            <div class="modal-filters-dropdown">
+              <div class="modal-filters-dropdown-container">
+                <fieldset class="ccl-fieldset">
+                  <div class=" ccl-expandable__button" aria-expanded="false">
+                    <legend class="ccl-form-legend">Search only in</legend>
+                  </div>
+                  <div class="ccl-form">
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="search_products" name="" value="products" class="ccl-checkbox ccl-required ccl-form-check-input">
+                        <label class="ccl-form-check-label" for="search_products">Products</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="search_datasets" name="" value="datasets" class="ccl-checkbox ccl-required ccl-form-check-input">
+                        <label class="ccl-form-check-label" for="search_datasets">Datasets</label>
+                    </div>
+                    <div class=" ccl-expandable__button" aria-expanded="false">
+                      <div class="ccl-form">
+                        <div class="ccl-form-group">
+                          <input type="checkbox" id="search_documantation" name="" value="documentation" class="ccl-checkbox ccl-required ccl-form-check-input">
+                          <label class="ccl-form-check-label" for="search_documantation">Product documentation</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ccl-form">
+                      <div class="ccl-form-group">
+                        <input type="checkbox" id="search_documentation_manuals" name="" value="documentation_manuals" class="ccl-checkbox ccl-required ccl-form-check-input">
+                          <label class="ccl-form-check-label" for="search_documentation_manuals">User manuals</label>
+                      </div>
+                      <div class="ccl-form-group">
+                        <input type="checkbox" id="search_documentation_methodology" name="" value="documentation_methodology" class="ccl-checkbox ccl-required ccl-form-check-input">
+                          <label class="ccl-form-check-label" for="search_documentation_methodology">Methodology description</label>
+                      </div>
+                      <div class="ccl-form-group">
+                        <input type="checkbox" id="search_documentation_quality" name="" value="documentation_methodology" class="ccl-checkbox ccl-required ccl-form-check-input">
+                          <label class="ccl-form-check-label" for="search_documentation_quality">Quality control documents</label>
+                      </div>
+                      <div class="ccl-form-group">
+                        <input type="checkbox" id="search_documentation_" name="" value="documentation_methodology" class="ccl-checkbox ccl-required ccl-form-check-input">
+                          <label class="ccl-form-check-label" for="search_documentation_">...</label>
+                      </div>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="search_madeeasy" name="" value="madeeasy" class="ccl-checkbox ccl-required ccl-form-check-input">
+                        <label class="ccl-form-check-label" for="search_madeeasy">CLMS made easy</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="search_usecases" name="" value="usecases" class="ccl-checkbox ccl-required ccl-form-check-input">
+                        <label class="ccl-form-check-label" for="search_usecases">Use cases</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="search_news" name="" value="news" class="ccl-checkbox ccl-required ccl-form-check-input">
+                        <label class="ccl-form-check-label" for="search_news">News</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="search_events" name="" value="events" class="ccl-checkbox ccl-required ccl-form-check-input">
+                        <label class="ccl-form-check-label" for="search_events">Events</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="search_guides" name="" value="guides" class="ccl-checkbox ccl-required ccl-form-check-input">
+                        <label class="ccl-form-check-label" for="search_guides">How-to guides</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="search_faqs" name="" value="faqs" class="ccl-checkbox ccl-required ccl-form-check-input">
+                        <label class="ccl-form-check-label" for="search_faqs">FAQs</label>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="ccl-fieldset">
+                  <div class="ccl-form">
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="archived" name="field_archived" value="archived" class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="archived">Show only archived data</label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+          <div class="modal-filters-button">
+            <button id="" class="ccl-button ccl-button-green">Apply filters</button>
           </div>
         </div>
       </div>

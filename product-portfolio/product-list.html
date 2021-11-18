@@ -125,80 +125,26 @@
               <a href="../product-portfolio/upcoming-products.html" class="collapsed">Upcoming products</a>
             </div>
           </nav>
-          <nav class="dropdown-filters">
-            <fieldset class="ccl-fieldset">
-              <div class="ccl-expandable__button" aria-expanded="false"><legend class="ccl-form-legend">Sort by</legend></div>
-              <div class="ccl-form">
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="sort_by_name" name="field_gdpr[value]" value="name" class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
-                  <label class="ccl-form-check-label" for="sort_by_name">Name</label>
-                </div>
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="sort_by_date" name="field_gdpr[value]" value="date" class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
-                  <label class="ccl-form-check-label" for="sort_by_date">Date</label>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="ccl-fieldset">
-              <div class="ccl-expandable__button" aria-expanded="false"><legend class="ccl-form-legend">Service component</legend></div>
-              <div class="ccl-form">
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="component_land" name="field_gdpr[value]" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
-                  <label class="ccl-form-check-label" for="component_land">Land Cover and Land Use Mapping</label>
-                </div>
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="component_hotspot" name="field_gdpr[value]" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
-                  <label class="ccl-form-check-label" for="component_hotspot">Hot-spot Monitoring</label>
-                </div>
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="component_biophysical" name="field_gdpr[value]" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
-                  <label class="ccl-form-check-label" for="component_biophysical">Biophysical Parameters</label>
-                </div>
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="component_imagery" name="field_gdpr[value]" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
-                  <label class="ccl-form-check-label" for="component_imagery">Imagery, In Situ and Reference Data</label>
-                </div>
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="component_ground" name="field_gdpr[value]" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
-                  <label class="ccl-form-check-label" for="component_ground">European Ground Motion Service</label>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="ccl-fieldset">
-              <div class="ccl-expandable__button" aria-expanded="false"><legend class="ccl-form-legend">Variable domain</legend></div>
-              <div class="ccl-form">
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="domain_" name="field_gdpr[value]" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
-                  <label class="ccl-form-check-label" for="domain_">...</label>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="ccl-fieldset">
-              <div class="ccl-expandable__button" aria-expanded="false"><legend class="ccl-form-legend">Spatial coverage</legend></div>
-              <div class="ccl-form">
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="spatial_" name="field_gdpr[value]" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
-                  <label class="ccl-form-check-label" for="spatial_">...</label>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="ccl-fieldset">
-              <div class="ccl-expandable__button" aria-expanded="false"><legend class="ccl-form-legend">Temporal coverage</legend></div>
-              <div class="ccl-form">
-                <div class="ccl-form-group">
-                  <input type="checkbox" id="temporal_" name="field_gdpr[value]" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
-                  <label class="ccl-form-check-label" for="temporal_">...</label>
-                </div>
-              </div>
-            </fieldset>
-          </nav>
         </div>
         <div class="right-content cont-w-75">
-          <div class="product-block">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus mauris ante, a iaculis leo placerat quis. Nullam vitae vulputate leo, et ultricies dolor</h2>
-            <p>
-              Sed tincidunt, dui sit amet ullamcorper efficitur, tortor metus hendrerit ipsum, et sodales elit velit sit amet dui. Nulla porttitor porttitor condimentum. Nunc non ornare tortor. Curabitur quis feugiat arcu, et tincidunt odio. Nullam varius lorem lacus, quis ullamcorper eros bibendum id. Etiam in vulputate magna. Quisque condimentum ipsum elementum tortor volutpat, a dapibus nisl lacinia. Proin urna dui, egestas in sapien pretium, placerat euismod dolor. Etiam turpis magna, auctor at gravida suscipit, feugiat ut magna. Duis laoreet laoreet ante nec dapibus. Ut ultrices est vel ligula commodo, pharetra tristique tellus consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-            </p>
+          <div class="filters-container">
+            <div class="filters-element filters-element-order">
+              <div class="filters-title">
+                <span class="filters-title-light">Sort by</span>
+              </div>
+              <select name="" id="">
+                <option value="az">Title A-Z</option>
+                <option value="za">Title Z-A</option>
+                <option value="new">Newest</option>
+                <option value="old">Oldest</option>
+              </select>
+            </div>
+            <div class="filters-element filters-element-filter">
+              <div class="filters-title">
+                <i class="fas fa-sliders-h"></i>
+                <span class="filters-title-bold">Filters</span>
+              </div>
+            </div>
           </div>
           <div class="card-container">
             <div class="card-block">
@@ -400,6 +346,182 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-filters" id="filters_modal">
+      <div class="modal-filters-background">
+        <div class="modal-filters-container">
+          <div class="modal-filters-header">
+            <div class="modal-filters-title">
+              <h3 class="modal-title">Filters</h3>
+            </div>
+            <div class="modal-filters-right">
+              <div class="modal-filters-clear">Clear filters</div>
+              <div class="modal-close modal-filters-close">
+                <span class="ccl-icon-close" aria-label="Close"></span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-filters-body">
+            <div class="modal-filters-dropdown">
+              <div class="modal-filters-dropdown-container">
+                <fieldset class="ccl-fieldset">
+                  <div class="ccl-expandable__button" aria-expanded="false">
+                    <legend class="ccl-form-legend">Service component</legend>
+                  </div>
+                  <div class="ccl-form">
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="component_land" name="field_component_land" value="land" class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="component_land">Land Cover and Land Use Mapping</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="component_hotspot" name="field_component_hotspot" value="hotspot" class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="component_hotspot">Hot-spot Monitoring</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="component_biophysical" name="field_component_biophysical" value="biophysical" class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="component_biophysical">Biophysical Parameters</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="component_imagery" name="field_component_imagery" value="imagery" class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="component_imagery">Imagery, In Situ and Reference Data</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="component_ground" name="field_component_ground" value="ground" class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="component_ground">European Ground Motion Service</label>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="ccl-fieldset">
+                  <div class="ccl-expandable__button" aria-expanded="false">
+                    <legend class="ccl-form-legend">Geographical coverage</legend>
+                  </div>
+                  <div class="ccl-form">
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="coverage_global" name="field_coverage_global" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="coverage_global">Global</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="coverage_nothern" name="field_coverage_northern" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="coverage_nothern">Northern Hemisphere</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="coverage_southern" name="field_coverage_southern" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="coverage_southern">Southern Hemisphere</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="coverage_europe" name="field_coverage_europe" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="coverage_europe">Europe</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="coverage_africa" name="field_coverage_africa" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="coverage_africa">Africa</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="coverage_" name="field_coverage_" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="coverage_">...</label>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="ccl-fieldset">
+                  <div class="ccl-expandable__button" aria-expanded="false">
+                    <legend class="ccl-form-legend">Update cycle</legend>
+                  </div>
+                  <div class="ccl-form">
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="update_hourly" name="field_update_" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="update_hourly">Hourly</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="update_daily" name="field_update_" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="update_daily">Daily</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="update_10daily" name="field_update_" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="update_10daily">10 days</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="update_monthly" name="field_update_" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="update_monthly">Monthly</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="update_quarterly" name="field_update_" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="update_quarterly">Quarterly</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="update_6months" name="field_update_" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="update_6months">6 months</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="update_yearly" name="field_update_" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="update_yearly">Yearly</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="update_3years" name="field_update_" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="update_3years">3 years</label>
+                    </div>
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="update_6years" name="field_update_" value="..." class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="update_6years">6 years</label>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="ccl-fieldset">
+                  <div class="ccl-expandable__button" aria-expanded="false">
+                    <legend class="ccl-form-legend">Reference year/time period</legend>
+                  </div>
+                  <div>
+                    <div class="filters-tag-container">
+                      <div class="filters-tag">
+                        <input type="checkbox" id="time_2000" name="field_year_" value="..." class="filters-tag-input" aria-required="true">
+                        <label class="filters-tag-label" for="time_2000">2000</label>
+                      </div>
+                      <div class="filters-tag">
+                        <input type="checkbox" id="time_2001" name="field_year_" value="..." class="filters-tag-input" aria-required="true">
+                        <label class="filters-tag-label" for="time_2001">2001</label>
+                      </div>
+                      <div class="filters-tag">
+                        <input type="checkbox" id="time_2002" name="field_year_" value="..." class="filters-tag-input" aria-required="true">
+                        <label class="filters-tag-label" for="time_2002">2002</label>
+                      </div>
+                      <div class="filters-tag">
+                        <input type="checkbox" id="time_2003" name="field_year_" value="..." class="filters-tag-input" aria-required="true">
+                        <label class="filters-tag-label" for="time_2003">2003</label>
+                      </div>
+                      <div class="filters-tag">
+                        <input type="checkbox" id="time_2000-2015" name="field_year_" value="..." class="filters-tag-input" aria-required="true">
+                        <label class="filters-tag-label" for="time_2000-2015">2000-2015</label>
+                      </div>
+                      <div class="filters-tag">
+                        <input type="checkbox" id="time_2000-2016" name="field_year_" value="..." class="filters-tag-input" aria-required="true">
+                        <label class="filters-tag-label" for="time_2000-2016">2000-2016</label>
+                      </div>
+                      <div class="filters-tag">
+                        <input type="checkbox" id="time_2000-2017" name="field_year_" value="..." class="filters-tag-input" aria-required="true">
+                        <label class="filters-tag-label" for="time_2000-2017">2000-2017</label>
+                      </div>
+                      <div class="filters-tag">
+                        <input type="checkbox" id="time_2000-2018" name="field_year_" value="..." class="filters-tag-input" aria-required="true">
+                        <label class="filters-tag-label" for="time_2000-2018">2000-2018</label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="ccl-fieldset">
+                  <div class="ccl-form">
+                    <div class="ccl-form-group">
+                      <input type="checkbox" id="archived" name="field_archived" value="archived" class="ccl-checkbox ccl-required ccl-form-check-input" aria-required="true">
+                      <label class="ccl-form-check-label" for="archived">Show only archived data</label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+          <div class="modal-filters-button">
+            <button id="" class="ccl-button ccl-button-green">Apply filters</button>
           </div>
         </div>
       </div>

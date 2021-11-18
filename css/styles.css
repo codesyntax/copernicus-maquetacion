@@ -655,7 +655,7 @@ main .ccl-container .cont-w-75 {
 
 /* Search */
 .search-results {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-weight: bold;
   font-size: 0.85rem;
 }
@@ -666,6 +666,11 @@ main .ccl-container .cont-w-75 {
   font-size: 0.85rem;
   padding: 0.25rem 0.5rem;
   font-weight: normal;
+}
+.search-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Forms */

@@ -85,6 +85,17 @@ $(document).ready(function(){
       //*** submit
     }
   })
+
+  //*** Filters ***//
+  document.querySelector('.filters-element-filter').addEventListener('click', () => {
+    $("#filters_modal").fadeIn();
+    document.querySelector('body').style.overflow = 'hidden';
+  });
+
+  document.querySelector('.modal-filters-close').addEventListener('click', () => {
+    $(this).parents(".modal").fadeOut();
+    document.querySelector('body').style.overflow = '';
+  });
 });
 
 function addProfileOptions () {
